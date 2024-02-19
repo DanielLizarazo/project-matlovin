@@ -69,3 +69,70 @@
     text-decoration: none;
     font-size: 30.14px;
 }
+
+/* ------------ footer ----------*/
+
+.footer {
+    /* width: 100vw; */
+    height: 20.48rem;
+    background-color: #121111;
+}
+
+.footer .nav-footer{
+    height: 13rem;
+}
+
+.footer .nav-footer .enlaces-footer {
+    height: 13rem;
+    /* width: 90%; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3.12rem;
+    list-style: none;
+}
+
+.footer .nav-footer .enlaces-footer li {
+    margin: 0 2rem;
+}
+
+.footer .nav-footer .enlaces-footer li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30.14px;
+}
+
+.footer .contenedor__principal_redes{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .contenedor-redes{
+    width: 90%;
+    height: 87px;
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .contenedor-redes .nav-redes .enlaces-redes{
+    display: flex;
+    list-style: none    ;
+}
+
+.footer .contenedor-redes .nav-redes .enlaces-redes li{
+    margin: 0 1.5rem;
+}
+
+.footer .contenedor-redes .nav-redes .enlaces-redes li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22.34px;
+}
+
+.footer .contenedor__principal_redes h3{
+ color:    rgba(255, 255, 255, 0.40);
+ margin-right: 3.12rem;
+}
+
