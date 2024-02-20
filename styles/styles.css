@@ -78,8 +78,19 @@
     background-color: #121111;
 }
 
+.footer__pages {
+    /* width: 100vw; */
+    height: 17.48rem;
+    background-color: #121111;
+}
+
 .footer .nav-footer{
     height: 13rem;
+}
+
+.footer .nav-footer__hidden{
+    height: 10rem;
+    visibility: hidden;
 }
 
 .footer .nav-footer .enlaces-footer {
@@ -232,6 +243,87 @@
     margin: 0rem -5rem 0rem 0rem;
 }
 
+/* ---------- MAIN-WORK -----------*/
+
+.main-work {
+    display: flex;
+    flex-direction: column;
+    background-color: #121111;
+
+}
+
+.main-work header nav {
+    margin-left: 3.12rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-work header nav ul{
+    display: flex;
+}
+
+.main-work header nav ul li{
+    margin-right: 3rem;
+    list-style: none;
+}
+
+.main-work header nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 33.104px;   
+}
+
+.main-work img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.main-work section {
+    display: flex;
+    margin: 0.2rem 3.12rem 0.2rem 3.12rem;
+    align-items: center;
+}
+
+.main-work article {
+    padding: 0 0.2rem 0 0.2rem;
+}
+
+/* PRIMER BLOQUE */
+
+.primer_bloque .jende {
+    width: 45%;
+}
+
+.primer_bloque .ecosistema {
+    width: 60%;
+}
+
+/* SEGUNDO BLOQUE */
+
+.segundo_bloque .namnam {
+    width: 102%;
+}
+
+.segundo_bloque .dixie {
+    width: 100%;
+}
+
+/* TERCER BLOQUE */
+
+.tercer_bloque article {
+    width: 33.3%;
+}
+
+/* CUARTO BLOQUE */
+
+.cuarto_bloque {
+    justify-content: space-around;
+}
+
+.cuarto_bloque .altiplano {
+    width: 100%;
+}
 
 
 
@@ -324,3 +416,4 @@
         rotate: 0deg;
         margin: 0;
     }
+}
