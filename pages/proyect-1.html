@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Matlovin</title>
     <link rel="icon" href="../resources/Asset 5.svg">
 </head>
@@ -24,31 +24,45 @@
         </ul>
     </nav>
 
+    <!-- encabezado del proyecto -->
+    <header>
+        <h1><span class="jende">Jende</span> <br> Stories through coffee</h1>
+    </header>
     <main class="main-project">
-        <!-- encabezado del proyecto -->
-        <header>
-        
-                <!-- <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a1f0e0149536781.655e4dc05ab5c.jpg"> -->
-            
-        </header>
+        <div class="sub-header">
+            <div>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                        <path
+                            d="M9.5 4.75C8.91284 4.75 8.33886 4.92411 7.85065 5.25032C7.36244 5.57654 6.98193 6.04019 6.75723 6.58266C6.53253 7.12513 6.47374 7.72204 6.58829 8.29792C6.70284 8.87381 6.98559 9.40279 7.40078 9.81797C7.81596 10.2332 8.34494 10.5159 8.92083 10.6305C9.49671 10.745 10.0936 10.6862 10.6361 10.4615C11.1786 10.2368 11.6422 9.85631 11.9684 9.3681C12.2946 8.87989 12.4688 8.30591 12.4688 7.71875C12.4688 6.93139 12.156 6.17628 11.5992 5.61953C11.0425 5.06278 10.2874 4.75 9.5 4.75ZM9.5 9.5C9.1477 9.5 8.80332 9.39553 8.51039 9.19981C8.21747 9.00408 7.98916 8.72589 7.85434 8.4004C7.71952 8.07492 7.68425 7.71677 7.75298 7.37125C7.82171 7.02572 7.99135 6.70833 8.24047 6.45922C8.48958 6.2101 8.80697 6.04046 9.1525 5.97173C9.49802 5.903 9.85617 5.93827 10.1817 6.07309C10.5071 6.20791 10.7853 6.43622 10.9811 6.72914C11.1768 7.02207 11.2812 7.36645 11.2812 7.71875C11.2812 8.19117 11.0936 8.64424 10.7595 8.97828C10.4255 9.31233 9.97242 9.5 9.5 9.5ZM9.5 1.1875C7.76841 1.18946 6.1083 1.87821 4.88388 3.10263C3.65946 4.32705 2.97071 5.98716 2.96875 7.71875C2.96875 10.0492 4.04566 12.5192 6.08594 14.8623C7.0027 15.9211 8.03452 16.8745 9.1623 17.7049C9.26214 17.7748 9.38108 17.8123 9.50297 17.8123C9.62486 17.8123 9.7438 17.7748 9.84363 17.7049C10.9693 16.8741 11.9992 15.9207 12.9141 14.8623C14.9514 12.5192 16.0312 10.0492 16.0312 7.71875C16.0293 5.98716 15.3405 4.32705 14.1161 3.10263C12.8917 1.87821 11.2316 1.18946 9.5 1.1875ZM9.5 16.4766C8.27316 15.5117 4.15625 11.9678 4.15625 7.71875C4.15625 6.3015 4.71925 4.9423 5.7214 3.94015C6.72355 2.938 8.08275 2.375 9.5 2.375C10.9173 2.375 12.2765 2.938 13.2786 3.94015C14.2807 4.9423 14.8438 6.3015 14.8438 7.71875C14.8438 11.9663 10.7268 15.5117 9.5 16.4766Z"
+                            fill="white" />
+                    </svg> Colombia</p>
+            </div>
+            <div>
+                <p>Concept<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                        fill="none">
+                        <path
+                            d="M9.5 1.78125C7.97338 1.78125 6.48104 2.23395 5.2117 3.08209C3.94235 3.93024 2.95302 5.13574 2.36881 6.54616C1.78459 7.95658 1.63174 9.50856 1.92957 11.0059C2.2274 12.5031 2.96254 13.8785 4.04202 14.958C5.12151 16.0375 6.49686 16.7726 7.99415 17.0704C9.49144 17.3683 11.0434 17.2154 12.4538 16.6312C13.8643 16.047 15.0698 15.0576 15.9179 13.7883C16.7661 12.519 17.2188 11.0266 17.2188 9.5C17.2166 7.45352 16.4027 5.49148 14.9556 4.04441C13.5085 2.59733 11.5465 1.78341 9.5 1.78125ZM9.5 16.0312C8.20824 16.0312 6.94549 15.6482 5.87144 14.9305C4.79738 14.2129 3.96025 13.1928 3.46592 11.9994C2.97158 10.806 2.84224 9.49275 3.09425 8.22582C3.34626 6.95888 3.9683 5.79512 4.88171 4.88171C5.79512 3.9683 6.95888 3.34626 8.22582 3.09425C9.49276 2.84224 10.806 2.97158 11.9994 3.46591C13.1928 3.96025 14.2129 4.79737 14.9305 5.87143C15.6482 6.94549 16.0313 8.20824 16.0313 9.5C16.0293 11.2316 15.3405 12.8917 14.1161 14.1161C12.8917 15.3405 11.2316 16.0293 9.5 16.0312ZM12.8888 9.07992C12.944 9.13507 12.9878 9.20055 13.0177 9.27263C13.0476 9.34471 13.063 9.42197 13.063 9.5C13.063 9.57803 13.0476 9.65529 13.0177 9.72737C12.9878 9.79945 12.944 9.86493 12.8888 9.92008L10.5138 12.2951C10.4024 12.4065 10.2513 12.4691 10.0938 12.4691C9.93619 12.4691 9.78509 12.4065 9.67368 12.2951C9.56226 12.1837 9.49967 12.0326 9.49967 11.875C9.49967 11.7174 9.56226 11.5663 9.67368 11.4549L11.0356 10.0938H6.53125C6.37378 10.0938 6.22276 10.0312 6.11141 9.91985C6.00006 9.8085 5.9375 9.65747 5.9375 9.5C5.9375 9.34253 6.00006 9.1915 6.11141 9.08016C6.22276 8.96881 6.37378 8.90625 6.53125 8.90625H11.0356L9.67368 7.54508C9.56226 7.43367 9.49967 7.28256 9.49967 7.125C9.49967 6.96744 9.56226 6.81633 9.67368 6.70492C9.78509 6.59351 9.93619 6.53092 10.0938 6.53092C10.2513 6.53092 10.4024 6.59351 10.5138 6.70492L12.8888 9.07992Z"
+                            fill="white" />
+                    </svg> Visual Identity<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                        viewBox="0 0 19 19" fill="none">
+                        <path
+                            d="M9.5 1.78125C7.97338 1.78125 6.48104 2.23395 5.2117 3.08209C3.94235 3.93024 2.95302 5.13574 2.36881 6.54616C1.78459 7.95658 1.63174 9.50856 1.92957 11.0059C2.2274 12.5031 2.96254 13.8785 4.04202 14.958C5.12151 16.0375 6.49686 16.7726 7.99415 17.0704C9.49144 17.3683 11.0434 17.2154 12.4538 16.6312C13.8643 16.047 15.0698 15.0576 15.9179 13.7883C16.7661 12.519 17.2188 11.0266 17.2188 9.5C17.2166 7.45352 16.4027 5.49148 14.9556 4.04441C13.5085 2.59733 11.5465 1.78341 9.5 1.78125ZM9.5 16.0312C8.20824 16.0312 6.94549 15.6482 5.87144 14.9305C4.79738 14.2129 3.96025 13.1928 3.46592 11.9994C2.97158 10.806 2.84224 9.49275 3.09425 8.22582C3.34626 6.95888 3.9683 5.79512 4.88171 4.88171C5.79512 3.9683 6.95888 3.34626 8.22582 3.09425C9.49276 2.84224 10.806 2.97158 11.9994 3.46591C13.1928 3.96025 14.2129 4.79737 14.9305 5.87143C15.6482 6.94549 16.0313 8.20824 16.0313 9.5C16.0293 11.2316 15.3405 12.8917 14.1161 14.1161C12.8917 15.3405 11.2316 16.0293 9.5 16.0312ZM12.8888 9.07992C12.944 9.13507 12.9878 9.20055 13.0177 9.27263C13.0476 9.34471 13.063 9.42197 13.063 9.5C13.063 9.57803 13.0476 9.65529 13.0177 9.72737C12.9878 9.79945 12.944 9.86493 12.8888 9.92008L10.5138 12.2951C10.4024 12.4065 10.2513 12.4691 10.0938 12.4691C9.93619 12.4691 9.78509 12.4065 9.67368 12.2951C9.56226 12.1837 9.49967 12.0326 9.49967 11.875C9.49967 11.7174 9.56226 11.5663 9.67368 11.4549L11.0356 10.0938H6.53125C6.37378 10.0938 6.22276 10.0312 6.11141 9.91985C6.00006 9.8085 5.9375 9.65747 5.9375 9.5C5.9375 9.34253 6.00006 9.1915 6.11141 9.08016C6.22276 8.96881 6.37378 8.90625 6.53125 8.90625H11.0356L9.67368 7.54508C9.56226 7.43367 9.49967 7.28256 9.49967 7.125C9.49967 6.96744 9.56226 6.81633 9.67368 6.70492C9.78509 6.59351 9.93619 6.53092 10.0938 6.53092C10.2513 6.53092 10.4024 6.59351 10.5138 6.70492L12.8888 9.07992Z"
+                            fill="white" />
+                    </svg> Web</p>
+            </div>
+        </div>
 
-        <!-- descripcion del proyecto -->
-        <h1>Proyecto Jende</h1>
-        <section class="contenedor_principal">
-            <div class="contenedor_textos">
-                <p>Lorem ipsum dolor sit amet. </p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="contenedor_parrafo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi laboriosam esse magnam quasi
-                    aliquid cum ut molestias, expedita voluptatum nobis et laborum, maiores, ipsa consequatur ipsam?
-                    Quidem a quos voluptatibus alias. A tenetur ipsum iure itaque corrupti fuga magnam, nobis fugiat
-                    neque, nostrum officia est error aperiam facere quas.</p>
-            </div>
+
+        <section class="descripcion">
+            <p>
+                Jende is an espresso bar that it's designed to create a pleasant and high-quality experience for
+                users through beautiful spaces and coffee-based products and drinks. Jende seeks to make visible the
+                importance of coffee in society through the recognition of history. And this dictates that
+                Colombians received much of their heritage from the vast African continent. It left them the skin
+                color, rhythms, music, language and most important for this project... The coffee.
+            </p>
         </section>
 
-        <!-- imagenes del proyecto -->
         <section class="imagenes_proyecto">
             <article class="imagen-cuadrada">
                 <!-- <img src="../resources/JENDE - PHOTOS BY OSCAR APONTE_6.jpg" alt="cafeteras"> -->
@@ -61,28 +75,77 @@
             </article>
         </section>
 
+        <section class="contenedor-concepto">
+            <div class="concept">
+                <p>Concept</p>
+            </div>
+            <div class="contenedor_parrafo">
+                <p>The great 'Cimarron' Benkos, the founding hero, arrived enslaved in Cartagena de Indias. He
+                    organized palenques, configured forms of military resistance and was the guide who led
+                    his people to freedom. It is common to find him in the stories of grandparents, in children's
+                    stories, songs and, above all, in the epic and everyday history written by the palenqueros.</p>
+            </div>
+        </section>
+
+        <section class="contenedor-imagen">
+            <div></div>
+        </section>
+
+        <section class="contenedor-frase">
+            <div>
+                <p>
+                    Frase cautivadora, para explicar un concepto, puede ser esta.
+                </p>
+            </div>
+        </section>
+
+        <section class="imagenes_proyecto_">
+            <article class="imagen-cuadrada">
+                <!-- <img src="../resources/JENDE - PHOTOS BY OSCAR APONTE_6.jpg" alt="cafeteras"> -->
+            </article>
+            <article class="imagen-cuadrada_">
+                <!-- <img src="../resources/JENDE - PHOTOS BY OSCAR APONTE_7.jpg" alt="Coldbrew"> -->
+            </article>
+            <article class="imagen_grande_">
+                <!-- <img src="../resources/JENDE NEW FEED MAYO-55.JPG" alt="hombre y mujer preparando sanwich"> -->
+            </article>
+        </section>
+
         <!-- botones para next y prev -->
         <section class="botones">
-            <a href="#">Prev</a>
-            <a href="#">Next</a>
+            <div>
+                <a href="#">Prev</a>
+                <a href="#">Next</a>
+            </div>
         </section>
 
     </main>
 
 
-    <footer class="footer">
-        <div>
-            <a href="">
-                <img src="../resources/Asset 3.svg" alt="Logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="https://www.instagram.com/matlovin_/">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/mateoflorez/">Linkedin</a></li>
-                    <li><a href="https://www.behance.net/matlovin/">BeHance</a></li>
-                    <li><a href="https://open.spotify.com/user/mateo.florez">Spotify</a></li>
-                </ul>
-            </nav>
+    <footer class="footer footer__pages">
+
+        <nav class="nav-footer__hidden">
+            <!-- lista de enlaces footer -->
+            <ul class="enlaces-footer">
+                <li><a href="./pages/work.html">Work</a></li>
+                <li><a href="./pages/gallery.html">Gallery</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenedor__principal_redes">
+            <div class="contenedor-redes">
+                <nav class="nav-redes">
+                    <ul class="enlaces-redes">
+                        <li><a href="https://www.behance.net/matlovin/">BeHance</a></li>
+                        <li><a href="https://www.instagram.com/matlovin_/">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@matlovin_">TikTok</a></li>
+
+                    </ul>
+                </nav>
+                <h3>© 2024 Caldera Studio</h3>
+
+            </div>
         </div>
 
     </footer>

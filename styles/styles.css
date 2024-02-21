@@ -80,16 +80,16 @@
 
 .footer__pages {
     /* width: 100vw; */
-    height: 17.48rem;
+    height: 10rem;
     background-color: #121111;
 }
 
-.footer .nav-footer{
+.footer .nav-footer {
     height: 13rem;
 }
 
-.footer .nav-footer__hidden{
-    height: 10rem;
+.footer .nav-footer__hidden {
+    height: 4rem;
     visibility: hidden;
 }
 
@@ -113,12 +113,12 @@
     font-size: 30.14px;
 }
 
-.footer .contenedor__principal_redes{
+.footer .contenedor__principal_redes {
     display: flex;
     justify-content: center;
 }
 
-.footer .contenedor-redes{
+.footer .contenedor-redes {
     width: 90%;
     height: 87px;
     border-top: 1px solid #fff;
@@ -127,24 +127,24 @@
     align-items: center;
 }
 
-.footer .contenedor-redes .nav-redes .enlaces-redes{
+.footer .contenedor-redes .nav-redes .enlaces-redes {
     display: flex;
-    list-style: none    ;
+    list-style: none;
 }
 
-.footer .contenedor-redes .nav-redes .enlaces-redes li{
+.footer .contenedor-redes .nav-redes .enlaces-redes li {
     margin: 0 1.5rem;
 }
 
-.footer .contenedor-redes .nav-redes .enlaces-redes li a{
+.footer .contenedor-redes .nav-redes .enlaces-redes li a {
     color: #fff;
     text-decoration: none;
     font-size: 22.34px;
 }
 
-.footer .contenedor__principal_redes h3{
- color:    rgba(255, 255, 255, 0.40);
- margin-right: 3.12rem;
+.footer .contenedor__principal_redes h3 {
+    color: rgba(255, 255, 255, 0.40);
+    margin-right: 3.12rem;
 }
 
 /* ---------- MAIN-INDEX ----------*/
@@ -170,20 +170,20 @@
     width: 1139px;
     font-family: PPNeueMontreal-Thin;
     font-size: 84.251px;
-    color:#fff;
+    color: #fff;
     margin-left: 3.12rem;
     font-weight: 400;
 }
 
-.main-index header h1 .brand{
+.main-index header h1 .brand {
     color: #FFB59D;
     text-decoration: 4px underline;
 
 }
 
-.main-index header h1 .digital{
+.main-index header h1 .digital {
     color: #C0A9FF;
-    text-decoration: 4px underline ;
+    text-decoration: 4px underline;
 }
 
 /* -------con GRID---------- */
@@ -208,7 +208,7 @@
     width: 100%;
 }
 
-.link-last-project img{
+.link-last-project img {
     width: 100%;
     /* width: 1200px;
     height: 639px */
@@ -259,19 +259,19 @@
     align-items: center;
 }
 
-.main-work header nav ul{
+.main-work header nav ul {
     display: flex;
 }
 
-.main-work header nav ul li{
+.main-work header nav ul li {
     margin-right: 3rem;
     list-style: none;
 }
 
-.main-work header nav ul li a{
+.main-work header nav ul li a {
     color: #FFF;
     text-decoration: none;
-    font-size: 33.104px;   
+    font-size: 33.104px;
 }
 
 .main-work img {
@@ -325,7 +325,208 @@
     width: 100%;
 }
 
+/* -----------  MAIN PROJECT ----------- */
 
+header{
+   padding: 3.12rem;
+   background-color: #121111;
+}
+header h1 {
+   color: #FFF;
+   font-size: 80px;
+}
+
+header h1 .jende {
+   color: #FFD075
+}
+
+.main-project {
+    background-color: #121111;
+}
+
+.main-project p{
+    color: #FFF;
+}
+
+.main-project .sub-header{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 3.12rem;
+    border-bottom: 1px solid #FFF;
+}
+.main-project .sub-header div{
+    padding-bottom: 1rem;
+}
+
+.main-project .sub-header div p{
+    font-size: 20px;
+}
+
+.main-project .sub-header div svg{
+    padding: 0 10px;
+}
+
+.main-project .descripcion{
+    height: 10%;
+    padding: 5rem 3rem;
+}
+
+.main-project .descripcion p{
+    width: 50%;
+    font-size: 25px;
+    line-height: 39px;
+}
+
+/* ----------GRID IMAGENES ---------- */
+.imagenes_proyecto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    padding: 0 3.12rem;
+    grid-template-areas:
+        "imagen_grande imagen_grande imagen_grande"
+        "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada";
+}
+
+.imagen-cuadrada {
+    grid-area: imagen-cuadrada;
+    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 10px;
+}
+
+.imagen-cuadrada_ {
+    grid-area: imagen-cuadrada_;
+    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 10px;
+}
+
+.imagen_grande {
+    grid-area: imagen_grande;
+    background-image: url('../resources/JENDE\ NEW\ FEED\ MAYO-55.JPG');
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 10px;
+}
+
+.main-project .contenedor-concepto{
+    display: flex;
+    padding: 5rem 3rem;
+    justify-content: space-between;
+}
+
+.main-project .contenedor-concepto p{
+    font-size: 25px;
+    line-height: 39px;
+}
+
+
+.main-project .contenedor-concepto .concept{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.main-project .contenedor-concepto .concept p{
+text-decoration: underline;
+}
+
+.main-project .contenedor-concepto .contenedor_parrafo{
+    width: 42%;   
+}
+
+.main-project .contenedor-imagen{
+    width: 93%;
+    margin: auto;
+}
+
+.main-project .contenedor-imagen div{
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/7aada9149536781.62e9520ea60f5.jpg');
+    background-size: cover;
+    height: 50rem;
+    border-radius: 20px;
+}
+
+.main-project .contenedor-frase{
+    height: auto;
+    margin: 0 3.12rem;
+}
+
+.main-project .contenedor-frase div{
+    width: 75%;
+    padding: 4rem 0;
+}
+
+.main-project .contenedor-frase p{
+    font-size: 80px;
+}
+
+.imagenes_proyecto_ {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    padding: 0 3.12rem;
+    grid-template-areas:
+    "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
+    "imagen_grande_ imagen_grande_ imagen_grande_";
+}
+
+.imagen-cuadrada {
+    grid-area: imagen-cuadrada;
+    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 10px;
+}
+
+.imagen-cuadrada_ {
+    grid-area: imagen-cuadrada_;
+    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 10px;
+}
+
+.imagen_grande_ {
+    grid-area: imagen_grande_;
+    background-image: url('	https://mir-s3-cdn-cf.behance.net/project_modules/1400/e09740149536781.655e4dc0594a0.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 10px;
+}
+
+.main-project .botones{
+    padding: 2rem;
+}
+
+.main-project .botones div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-project .botones div a{
+    font-size: 129.222px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.botones div a:hover {
+    text-decoration: 2px underline;
+    color: #A1FEDD;
+    font-size: 100.222px;
+    transition: all 0.5s;
+}
 
 @media (max-width: 600px) {
 
@@ -360,7 +561,7 @@
     .footer div nav ul li {
         margin: 0 1.3rem;
     }
-    
+
     /*-----------query main-index ---------- */
 
     .main-index header {
