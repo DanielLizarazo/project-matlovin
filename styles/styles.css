@@ -157,16 +157,16 @@
     background-color: #121111;
 }
 
-.main-index header {
+.header-index {
     /* width: 100vw; */
     height: 56.4rem;
-    /* background-color: #121111; */
+    background-color: #121111;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.main-index header h1 {
+.header-index h1 {
     width: 1139px;
     font-family: PPNeueMontreal-Thin;
     font-size: 84.251px;
@@ -175,13 +175,13 @@
     font-weight: 400;
 }
 
-.main-index header h1 .brand {
+.header-index h1 .brand {
     color: #FFB59D;
     text-decoration: 4px underline;
 
 }
 
-.main-index header h1 .digital {
+.header-index h1 .digital {
     color: #C0A9FF;
     text-decoration: 4px underline;
 }
@@ -245,6 +245,31 @@
 
 /* ---------- MAIN-WORK -----------*/
 
+.header_pages {
+    background-color: #121111;
+}
+
+.header_pages nav {
+    margin-left: 3.12rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.header_pages nav ul {
+    display: flex;
+}
+
+.header_pages nav ul li {
+    margin-right: 3rem;
+    list-style: none;
+}
+
+.header_pages nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 33.104px;
+}
 .main-work {
     display: flex;
     flex-direction: column;
@@ -252,27 +277,6 @@
 
 }
 
-.main-work header nav {
-    margin-left: 3.12rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-}
-
-.main-work header nav ul {
-    display: flex;
-}
-
-.main-work header nav ul li {
-    margin-right: 3rem;
-    list-style: none;
-}
-
-.main-work header nav ul li a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 33.104px;
-}
 
 .main-work img {
     border-radius: 10px;
@@ -327,28 +331,29 @@
 
 /* -----------  MAIN PROJECT ----------- */
 
-header{
-   padding: 3.12rem;
-   background-color: #121111;
-}
-header h1 {
-   color: #FFF;
-   font-size: 80px;
+.header-project {
+    padding: 3.12rem;
+    background-color: #121111;
 }
 
-header h1 .jende {
-   color: #FFD075
+.header-project h1 {
+    color: #FFF;
+    font-size: 80px;
+}
+
+.header-project h1 .jende {
+    color: #FFD075
 }
 
 .main-project {
     background-color: #121111;
 }
 
-.main-project p{
+.main-project p {
     color: #FFF;
 }
 
-.main-project .sub-header{
+.main-project .sub-header {
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -356,24 +361,25 @@ header h1 .jende {
     margin: 0 3.12rem;
     border-bottom: 1px solid #FFF;
 }
-.main-project .sub-header div{
+
+.main-project .sub-header div {
     padding-bottom: 1rem;
 }
 
-.main-project .sub-header div p{
+.main-project .sub-header div p {
     font-size: 20px;
 }
 
-.main-project .sub-header div svg{
+.main-project .sub-header div svg {
     padding: 0 10px;
 }
 
-.main-project .descripcion{
+.main-project .descripcion {
     height: 10%;
     padding: 5rem 3rem;
 }
 
-.main-project .descripcion p{
+.main-project .descripcion p {
     width: 50%;
     font-size: 25px;
     line-height: 39px;
@@ -417,55 +423,55 @@ header h1 .jende {
     border-radius: 10px;
 }
 
-.main-project .contenedor-concepto{
+.main-project .contenedor-concepto {
     display: flex;
     padding: 5rem 3rem;
     justify-content: space-between;
 }
 
-.main-project .contenedor-concepto p{
+.main-project .contenedor-concepto p {
     font-size: 25px;
     line-height: 39px;
 }
 
 
-.main-project .contenedor-concepto .concept{
+.main-project .contenedor-concepto .concept {
     width: 40%;
     text-align: center;
     margin: auto;
 }
 
-.main-project .contenedor-concepto .concept p{
-text-decoration: underline;
+.main-project .contenedor-concepto .concept p {
+    text-decoration: underline;
 }
 
-.main-project .contenedor-concepto .contenedor_parrafo{
-    width: 42%;   
+.main-project .contenedor-concepto .contenedor_parrafo {
+    width: 42%;
 }
 
-.main-project .contenedor-imagen{
+.main-project .contenedor-imagen {
     width: 93%;
     margin: auto;
 }
 
-.main-project .contenedor-imagen div{
+.main-project .contenedor-imagen div {
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/7aada9149536781.62e9520ea60f5.jpg');
     background-size: cover;
     height: 50rem;
     border-radius: 20px;
 }
 
-.main-project .contenedor-frase{
+.main-project .contenedor-frase {
     height: auto;
     margin: 0 3.12rem;
 }
 
-.main-project .contenedor-frase div{
+.main-project .contenedor-frase div {
     width: 75%;
     padding: 4rem 0;
 }
 
-.main-project .contenedor-frase p{
+.main-project .contenedor-frase p {
     font-size: 80px;
 }
 
@@ -475,8 +481,8 @@ text-decoration: underline;
     grid-template-rows: 500px 500px;
     padding: 0 3.12rem;
     grid-template-areas:
-    "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
-    "imagen_grande_ imagen_grande_ imagen_grande_";
+        "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
+        "imagen_grande_ imagen_grande_ imagen_grande_";
 }
 
 .imagen-cuadrada {
@@ -506,16 +512,16 @@ text-decoration: underline;
     border-radius: 10px;
 }
 
-.main-project .botones{
+.main-project .botones {
     padding: 2rem;
 }
 
-.main-project .botones div{
+.main-project .botones div {
     display: flex;
     justify-content: space-around;
 }
 
-.main-project .botones div a{
+.main-project .botones div a {
     font-size: 129.222px;
     text-decoration: none;
     color: #FFF;
@@ -528,9 +534,45 @@ text-decoration: underline;
     transition: all 0.5s;
 }
 
+/* -------------------- GALLERY -------------*/
+
+
+.main-gallery {
+    margin: auto;
+    background: #121111;
+
+}
+
+.main-gallery .contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #121111;
+}
+
+.main-gallery .contenedor-galeria img{
+    width: 330px;
+    height: 552px;
+    margin: 10px
+
+}
+
+.main-gallery .contenedor-galeria img:hover{
+
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+border-radius: 20px;
+}
+
+
 
 /* ---------- CONTACT -------- */
 
+
+.nav a{
+    width: auto;
+}
 .main-contact {
     display: flex;
     flex-direction: row;
@@ -547,15 +589,11 @@ text-decoration: underline;
     background-color: rgb(19, 19, 18);
 }
 
-/* .card .card-body {
-    width: 22rem;
-    height: 27rem;
-} */
-
-.card .card-body .card-text{
+.card .card-body .card-text {
     font-size: 20px;
     font-family: PPNeueMontreal-Thin;
     color: rgba(255, 255, 255, 0.40);
+    font-weight: 700;
 }
 
 .formulario {
@@ -601,9 +639,8 @@ text-decoration: underline;
     font-size: 60px;
     color: rgb(125, 125, 233);
     background-image: url('../resources/Captura\ de\ pantalla\ 2024-02-21\ 110747.png');
-    
-}
 
+}
 
 .formulario .email {
     border: none;
@@ -618,22 +655,23 @@ text-decoration: underline;
 
 }
 
-.formulario .boton{
+.formulario .boton {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3rem;
     width: auto;
 }
+
 .formulario .boton-enviar {
-    background: #121111 ;
+    background: #121111;
     border: 2px solid white;
     font-size: 25.19px;
     padding: 0 2rem;
     text-align: center;
-    font-family: PPNeueMontreal-Bold;
-    color: #FFF;  
-    border-radius: 100px;  
+    font-family: PPNeueMontreal-Thin;
+    color: #FFF;
+    border-radius: 100px;
 
 }
 
