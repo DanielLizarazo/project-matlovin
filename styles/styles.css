@@ -153,7 +153,7 @@ body {
     list-style: none;
 }
 
-.footer .contenedor-redes .nav-redes .enlaces-redes-responsive  li {
+.footer .contenedor-redes .nav-redes .enlaces-redes-responsive li {
     margin: 0 1rem;
 }
 
@@ -557,7 +557,6 @@ body {
 
 /* -------------------- GALLERY -------------*/
 
-
 .main-gallery {
     margin: auto;
     background: #121111;
@@ -586,9 +585,7 @@ body {
 }
 
 
-
-/* ---------- CONTACT -------- */
-
+  /* ---------- CONTACT -------- */
 
 .nav a {
     width: auto;
@@ -696,7 +693,8 @@ body {
 
 }
 
-@media (max-width: 1024px){
+/* -----------MEDIA QUERYS---------- */
+@media (max-width: 1024px) {
     .main-index .link-gallery a h2 {
         font-size: 86.788px;
         margin: 0rem -4rem 0rem 0rem;
@@ -720,7 +718,6 @@ body {
     .nav ul {
         margin-right: 0;
     }
-
 
     /* --------- query footer ----------*/
 
@@ -747,30 +744,27 @@ body {
         display: flex;
     }
 
-    .footer .contenedor-redes h3{
+    .footer .contenedor-redes h3 {
         font-size: 1rem;
         margin-right: 1.12rem;
     }
 
-
-
     /*-----------query main-index ---------- */
 
-     .header-index {
+    .header-index {
         height: fit-content;
         padding: 4rem 0;
     }
 
     .header-index h1 {
         font-size: 70px;
-
     }
 
-   /* -------con GRID---------- */
+    /* -------con GRID---------- */
 
     .main-index section {
         display: grid;
-        margin: 0 2rem;
+        margin: 0 1rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 0.8fr;
         justify-items: center;
@@ -781,9 +775,9 @@ body {
     }
 
     .link-gallery {
-      border-radius: 55px;
+        border-radius: 55px;
     }
-    
+
     .main-index .link-gallery a {
         border-radius: 55px;
         text-decoration: none;
@@ -797,62 +791,56 @@ body {
         rotate: 0deg;
         margin: auto;
     }
- 
+
+    /* --------- MAIN WORK------ */
+    .header_pages nav ul li a {
+        font-size: 22.104px;
+    }
+
+    .main-work .tercer_bloque {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tercer_bloque article {
+        width: 48.3%;
+    }
+
 }
 
-@media (max-width: 768px){
-    .header-index h1 {
-        font-size: 61px;
-      
-    }
+@media (max-width: 426px) {
 
-    .main-index section {
-        display: grid;
-        margin: 0 1rem;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 0.8fr;
-        justify-items: center;
-        align-content: space-around;
-        grid-template-areas:
-            "link-last-project link-last-project "
-            "link-gallery link-gallery";
-    }
-
-    .main-index .link-gallery a h2 {
-        font-size: 50.788px;
-    }
-}
-
-@media (max-width: 426px){
     .header-index h1 {
         font-size: 44px;
-      
     }
+
+    /* -------- query nav --------- */
 
     .nav ul li {
         margin: 0 1rem;
     }
 
-    .nav ul li a{
+    .nav ul li a {
         font-size: 20px;
     }
-    
+
+    /* --------- query footer ----------*/
+
     .footer .nav-footer .enlaces-footer li {
         margin: 0 1rem;
     }
 
-    .footer .nav-footer .enlaces-footer li a{
+    .footer .nav-footer .enlaces-footer li a {
         font-size: 20px;
     }
 
-    .footer .contenedor-redes h3{
+    .footer .contenedor-redes h3 {
         font-size: 10px;
         margin-right: 0;
     }
 
-    .header-index h1 {
-        font-size: 35px; 
-    }
+    /*-----------query main-index ---------- */
 
     .main-index section {
         display: grid;
@@ -866,11 +854,62 @@ body {
             "link-gallery";
     }
 
-    .main-index .link-gallery{
+    .main-index .link-gallery {
         width: 100%;
         border-radius: 20px;
     }
+
     .main-index .link-gallery a h2 {
         font-size: 50.788px;
     }
+
+    /* --------- MAIN WORK------ */
+    .header_pages nav {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .header_pages nav ul li {
+        margin: 0 1rem;
+        list-style: none;
+    }
+
+    .header_pages nav ul li a {
+        font-size: 20.104px;
+    }
+
+    .main-work section {
+        display: flex;
+        flex-direction: column;
+        margin: 0.1rem 1.12rem 0.1rem 1.12rem;
+        align-items: center;
+    }
+
+    /* PRIMER BLOQUE */
+
+    .primer_bloque .jende {
+        width: 100%;
+    }
+
+    .primer_bloque .ecosistema {
+        width: 100%;
+    }
+
+    /* SEGUNDO BLOQUE */
+
+    .segundo_bloque .namnam {
+        width: 100%;
+    }
+
+    .segundo_bloque .dixie {
+        width: 100%;
+    }
+
+    /* TERCER BLOQUE */
+
+    .tercer_bloque article {
+        width: 100%;
+        margin: 0.5px 0;
+    }
+
 }
