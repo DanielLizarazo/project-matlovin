@@ -585,7 +585,7 @@ body {
 }
 
 
-  /* ---------- CONTACT -------- */
+/* ---------- CONTACT -------- */
 
 .nav a {
     width: auto;
@@ -699,6 +699,10 @@ body {
         font-size: 86.788px;
         margin: 0rem -4rem 0rem 0rem;
     }
+
+    .main-project .contenedor-imagen div {
+        height: 36rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -807,6 +811,75 @@ body {
         width: 48.3%;
     }
 
+    /* --------query project ----- */
+
+    .header-project h1 {
+        font-size: 66px;
+    }
+
+    .main-project .sub-header div p {
+        font-size: 16px;
+    }
+
+    .main-project .sub-header div svg {
+        padding: 0 7px;
+    }
+
+    .main-project .descripcion p {
+        width: 80%;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .imagenes_proyecto {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 400px 400px;
+        padding: 0 1.12rem;
+        grid-template-areas:
+            "imagen_grande imagen_grande imagen_grande"
+            "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada";
+    }
+
+    .main-project .contenedor-concepto .contenedor_parrafo {
+        width: 55%;
+    }
+
+    .main-project .contenedor-concepto p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .main-project .contenedor-imagen {
+        width: 94%;
+    }
+
+    .main-project .contenedor-imagen div {
+        height: 29rem;
+    }
+
+    .main-project .contenedor-frase p {
+        font-size: 60px;
+    }
+
+    .imagenes_proyecto_ {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 400px 400px;
+        padding: 0 1.12rem;
+        grid-template-areas:
+            "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
+            "imagen_grande_ imagen_grande_ imagen_grande_";
+    }
+
+    .main-project .botones div a {
+        font-size: 84.222px;
+    }
+
+    .footer .nav-footer__hidden {
+        height: 2rem;
+    }
+
 }
 
 @media (max-width: 426px) {
@@ -912,4 +985,84 @@ body {
         margin: 0.5px 0;
     }
 
+    /* --------MAIN PRIJECT-------- */
+
+    .header-project h1 {
+        font-size: 36px;
+    }
+
+    .main-project .sub-header {
+        margin: 0 2.12rem;
+    }
+
+    .main-project .sub-header div p {
+        font-size: 13px;
+    }
+
+    .main-project .descripcion {
+        height: 10%;
+        padding: 2rem 2rem;
+    }
+
+    .main-project .descripcion p {
+        width: 90%;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .imagenes_proyecto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 400px 400px;
+        padding: 0 1rem;
+        grid-template-areas:
+            "imagen_grande"
+            "imagen-cuadrada_"
+            "imagen-cuadrada";
+    }
+
+    .main-project .contenedor-concepto {
+        padding: 3rem 1rem;
+    }
+
+    .main-project .contenedor-concepto .concept {
+        width: 22%;
+        margin: 0
+    }
+
+    .main-project .contenedor-concepto .contenedor_parrafo {
+        width: 70%;
+    }
+
+    .main-project .contenedor-concepto p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .main-project .contenedor-imagen div {
+        height: 13rem;
+    }
+
+    .main-project .contenedor-frase {
+        margin: 0 2.12rem;
+    }
+
+    .main-project .contenedor-frase p {
+        font-size: 35px;
+    }
+
+    .imagenes_proyecto_ {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 408px 400px 277px;
+        padding: 0 1.12rem;
+        grid-template-areas:
+            "imagen-cuadrada_"
+            "imagen-cuadrada"
+            "imagen_grande_";
+    }
+
+    .main-project .botones div a {
+        font-size: 56.222px;
+    }
 }
