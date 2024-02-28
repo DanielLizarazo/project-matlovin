@@ -1,368 +1,400 @@
-/* -----------  MAIN PROJECT ----------- */
-
 .header-project {
     padding: 3.12rem;
     background-color: #121111;
+
+    h1 {
+        color: #FFF;
+        font-size: 80px;
+
+        .jende {
+            color: #FFD075
+        }
+    }
 }
 
-.header-project h1 {
-    color: #FFF;
-    font-size: 80px;
-}
-
-.header-project h1 .jende {
-    color: #FFD075
-}
+/* -----------  MAIN PROJECT ----------- */
 
 .main-project {
     background-color: #121111;
-}
 
-.main-project p {
-    color: #FFF;
-}
+    p {
+        color: #FFF;
+    }
 
-.main-project .sub-header {
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 0 3.12rem;
-    border-bottom: 1px solid #FFF;
-}
+    .sub-header {
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0 3.12rem;
+        border-bottom: 1px solid #FFF;
 
-.main-project .sub-header div {
-    padding-bottom: 1rem;
-}
+        div {
+            padding-bottom: 1rem;
 
-.main-project .sub-header div p {
-    font-size: 20px;
-}
+            p {
+                font-size: 20px;
 
-.main-project .sub-header div svg {
-    padding: 0 10px;
-}
+                svg {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
 
-.main-project .descripcion {
-    height: 10%;
-    padding: 5rem 3rem;
-}
+    .descripcion {
+        height: 10%;
+        padding: 5rem 3rem;
 
-.main-project .descripcion p {
-    width: 50%;
-    font-size: 25px;
-    line-height: 39px;
-}
+        p {
+            width: 50%;
+            font-size: 25px;
+            line-height: 39px;
+        }
+    }
 
-/* ----------GRID IMAGENES ---------- */
-.imagenes_proyecto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 500px 500px;
-    padding: 0 3.12rem;
-    grid-template-areas:
-        "imagen_grande imagen_grande imagen_grande"
-        "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada";
-}
+    /* ----------GRID IMAGENES ---------- */
+    .imagenes_proyecto {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 500px 500px;
+        padding: 0 3.12rem;
+        grid-template-areas:
+            "imagen_grande imagen_grande imagen_grande"
+            "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada";
 
-.imagen-cuadrada {
-    grid-area: imagen-cuadrada;
-    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 1rem 0.5rem 0 0.5rem;
-    border-radius: 10px;
-}
+        .imagen-cuadrada {
+            grid-area: imagen-cuadrada;
+            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 1rem 0.5rem 0 0.5rem;
+            border-radius: 10px;
+        }
 
-.imagen-cuadrada_ {
-    grid-area: imagen-cuadrada_;
-    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 1rem 0.5rem 0 0.5rem;
-    border-radius: 10px;
-}
+        .imagen-cuadrada_ {
+            grid-area: imagen-cuadrada_;
+            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 1rem 0.5rem 0 0.5rem;
+            border-radius: 10px;
+        }
 
-.imagen_grande {
-    grid-area: imagen_grande;
-    background-image: url('../resources/JENDE\ NEW\ FEED\ MAYO-55.JPG');
-    background-size: cover;
-    background-position: center;
-    margin: 1rem 0.5rem 0 0.5rem;
-    border-radius: 10px;
-}
+        .imagen_grande {
+            grid-area: imagen_grande;
+            background-image: url('../resources/JENDE\ NEW\ FEED\ MAYO-55.JPG');
+            background-size: cover;
+            background-position: center;
+            margin: 1rem 0.5rem 0 0.5rem;
+            border-radius: 10px;
+        }
+    }
 
-.main-project .contenedor-concepto {
-    display: flex;
-    padding: 5rem 3rem;
-    justify-content: space-between;
-}
+    .contenedor-concepto {
+        display: flex;
+        padding: 5rem 3rem;
+        justify-content: space-between;
 
-.main-project .contenedor-concepto p {
-    font-size: 25px;
-    line-height: 39px;
-}
+        div {
+            p {
+                font-size: 25px;
+                line-height: 39px;
+            }
+        }
 
+        .concept {
+            width: 40%;
+            text-align: center;
+            margin: auto;
 
-.main-project .contenedor-concepto .concept {
-    width: 40%;
-    text-align: center;
-    margin: auto;
-}
+            p {
+                text-decoration: underline;
+            }
+        }
 
-.main-project .contenedor-concepto .concept p {
-    text-decoration: underline;
-}
+        .contenedor_parrafo {
+            width: 42%;
+        }
+    }
 
-.main-project .contenedor-concepto .contenedor_parrafo {
-    width: 42%;
-}
+    .contenedor-imagen {
+        width: 93%;
+        margin: auto;
 
-.main-project .contenedor-imagen {
-    width: 93%;
-    margin: auto;
-}
+        div {
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/7aada9149536781.62e9520ea60f5.jpg');
+            background-size: cover;
+            height: 50rem;
+            border-radius: 20px;
+        }
+    }
 
-.main-project .contenedor-imagen div {
-    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/7aada9149536781.62e9520ea60f5.jpg');
-    background-size: cover;
-    height: 50rem;
-    border-radius: 20px;
-}
+    .contenedor-frase {
+        height: auto;
+        margin: 0 3.12rem;
 
-.main-project .contenedor-frase {
-    height: auto;
-    margin: 0 3.12rem;
-}
+        div {
+            width: 75%;
+            padding: 4rem 0;
 
-.main-project .contenedor-frase div {
-    width: 75%;
-    padding: 4rem 0;
-}
+            p {
+                font-size: 80px;
+            }
+        }
+    }
 
-.main-project .contenedor-frase p {
-    font-size: 80px;
-}
+    .imagenes_proyecto_ {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 500px 500px;
+        padding: 0 3.12rem;
+        grid-template-areas:
+            "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
+            "imagen_grande_ imagen_grande_ imagen_grande_";
 
-.imagenes_proyecto_ {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 500px 500px;
-    padding: 0 3.12rem;
-    grid-template-areas:
-        "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
-        "imagen_grande_ imagen_grande_ imagen_grande_";
-}
+        .imagen-cuadrada {
+            grid-area: imagen-cuadrada;
+            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 1rem 0.5rem 0 0.5rem;
+            border-radius: 10px;
+        }
 
-.imagen-cuadrada {
-    grid-area: imagen-cuadrada;
-    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 1rem 0.5rem 0 0.5rem;
-    border-radius: 10px;
-}
+        .imagen-cuadrada_ {
+            grid-area: imagen-cuadrada_;
+            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 1rem 0.5rem 0 0.5rem;
+            border-radius: 10px;
+        }
 
-.imagen-cuadrada_ {
-    grid-area: imagen-cuadrada_;
-    background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 1rem 0.5rem 0 0.5rem;
-    border-radius: 10px;
-}
+        .imagen_grande_ {
+            grid-area: imagen_grande_;
+            background-image: url('	https://mir-s3-cdn-cf.behance.net/project_modules/1400/e09740149536781.655e4dc0594a0.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 1rem 0.5rem 0 0.5rem;
+            border-radius: 10px;
+        }
+    }
 
-.imagen_grande_ {
-    grid-area: imagen_grande_;
-    background-image: url('	https://mir-s3-cdn-cf.behance.net/project_modules/1400/e09740149536781.655e4dc0594a0.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 1rem 0.5rem 0 0.5rem;
-    border-radius: 10px;
-}
+    .botones {
+        padding: 2rem;
 
-.main-project .botones {
-    padding: 2rem;
-}
+        div {
+            display: flex;
+            justify-content: space-around;
 
-.main-project .botones div {
-    display: flex;
-    justify-content: space-around;
-}
+            a {
+                font-size: 129.222px;
+                text-decoration: none;
+                color: #FFF;
 
-.main-project .botones div a {
-    font-size: 129.222px;
-    text-decoration: none;
-    color: #FFF;
-}
-
-.botones div a:hover {
-    text-decoration: 2px underline;
-    color: #A1FEDD;
-    font-size: 100.222px;
-    transition: all 0.5s;
+                &:hover {
+                    text-decoration: 2px underline;
+                    color: #A1FEDD;
+                    font-size: 100.222px;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
 }
 
 
 /* -----------MEDIA QUERYS---------- */
 @media (max-width: 1024px) {
-    .main-project .contenedor-imagen div {
-        height: 36rem;
+    .main-project {
+        .contenedor-imagen {
+            div {
+                height: 36rem;
+            }
+        }
     }
 }
 
 
 @media (max-width: 768px) {
-    /* --------query project ----- */
 
-    .header-project h1 {
-        font-size: 66px;
+    .header-project {
+        h1 {
+            font-size: 66px;
+        }
     }
 
-    .main-project .sub-header div p {
-        font-size: 16px;
-    }
+    .main-project {
+        .sub-header {
+            div {
+                p {
+                    font-size: 16px;
 
-    .main-project .sub-header div svg {
-        padding: 0 7px;
-    }
+                    svg {
+                        padding: 0 7px;
+                    }
+                }
+            }
+        }
 
-    .main-project .descripcion p {
-        width: 80%;
-        font-size: 20px;
-        line-height: 35px;
-    }
+        .descripcion {
+            p {
+                width: 80%;
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
 
-    .imagenes_proyecto {
-        display: grid;
-        grid-template-columns: 3fr 1fr 1fr;
-        grid-template-rows: 400px 400px;
-        padding: 0 1.12rem;
-        grid-template-areas:
-            "imagen_grande imagen_grande imagen_grande"
-            "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada";
-    }
+        .imagenes_proyecto {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            grid-template-rows: 400px 400px;
+            padding: 0 1.12rem;
+            grid-template-areas:
+                "imagen_grande imagen_grande imagen_grande"
+                "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada";
+        }
 
-    .main-project .contenedor-concepto .contenedor_parrafo {
-        width: 55%;
-    }
+        .contenedor-concepto {
+            p {
+                font-size: 20px;
+                line-height: 35px;
+            }
 
-    .main-project .contenedor-concepto p {
-        font-size: 20px;
-        line-height: 35px;
-    }
+            .contenedor_parrafo {
+                width: 55%;
+            }
+        }
 
-    .main-project .contenedor-imagen {
-        width: 94%;
-    }
+        .contenedor-imagen {
+            width: 94%;
 
-    .main-project .contenedor-imagen div {
-        height: 29rem;
-    }
+            div {
+                height: 29rem;
+            }
+        }
 
-    .main-project .contenedor-frase p {
-        font-size: 60px;
-    }
+        .contenedor-frase {
+            p {
+                font-size: 60px;
+            }
+        }
 
-    .imagenes_proyecto_ {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: 400px 400px;
-        padding: 0 1.12rem;
-        grid-template-areas:
-            "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
-            "imagen_grande_ imagen_grande_ imagen_grande_";
-    }
+        .imagenes_proyecto_ {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 400px 400px;
+            padding: 0 1.12rem;
+            grid-template-areas:
+                "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"
+                "imagen_grande_ imagen_grande_ imagen_grande_";
+        }
 
-    .main-project .botones div a {
-        font-size: 84.222px;
+        .botones {
+            div {
+                a {
+                    font-size: 84.222px;
+                }
+            }
+        }
     }
-
-    .footer .nav-footer__hidden {
-        height: 2rem;
-    }
-
 }
 
 @media (max-width: 426px) {
     /* --------MAIN PROJECT-------- */
- 
-     .header-project h1 {
-         font-size: 36px;
-     }
- 
-     .main-project .sub-header {
-         margin: 0 2.12rem;
-     }
- 
-     .main-project .sub-header div p {
-         font-size: 13px;
-     }
- 
-     .main-project .descripcion {
-         height: 10%;
-         padding: 2rem 2rem;
-     }
- 
-     .main-project .descripcion p {
-         width: 90%;
-         font-size: 17px;
-         line-height: 30px;
-     }
- 
-     .imagenes_proyecto {
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: 400px 400px 400px;
-         padding: 0 1rem;
-         grid-template-areas:
-             "imagen_grande"
-             "imagen-cuadrada_"
-             "imagen-cuadrada";
-     }
- 
-     .main-project .contenedor-concepto {
-         padding: 3rem 1rem;
-     }
- 
-     .main-project .contenedor-concepto .concept {
-         width: 22%;
-         margin: 0
-     }
- 
-     .main-project .contenedor-concepto .contenedor_parrafo {
-         width: 70%;
-     }
- 
-     .main-project .contenedor-concepto p {
-         font-size: 17px;
-         line-height: 30px;
-     }
- 
-     .main-project .contenedor-imagen div {
-         height: 13rem;
-     }
- 
-     .main-project .contenedor-frase {
-         margin: 0 2.12rem;
-     }
- 
-     .main-project .contenedor-frase p {
-         font-size: 35px;
-     }
- 
-     .imagenes_proyecto_ {
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: 408px 400px 277px;
-         padding: 0 1.12rem;
-         grid-template-areas:
-             "imagen-cuadrada_"
-             "imagen-cuadrada"
-             "imagen_grande_";
-     }
- 
-     .main-project .botones div a {
-         font-size: 56.222px;
-     }
- }
+
+    .header-project {
+        h1 {
+            font-size: 36px;
+        }
+    }
+
+    .main-project {
+        .sub-header {
+            margin: 0 2.12rem;
+
+            div {
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .descripcion {
+            height: 10%;
+            padding: 2rem 2rem;
+
+            p {
+                width: 90%;
+                font-size: 17px;
+                line-height: 30px;
+            }
+        }
+
+        .imagenes_proyecto {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px 400px 400px;
+            padding: 0 1rem;
+            grid-template-areas:
+                "imagen_grande"
+                "imagen-cuadrada_"
+                "imagen-cuadrada";
+        }
+
+        .contenedor-concepto {
+            padding: 3rem 1rem;
+
+            p {
+                font-size: 17px;
+                line-height: 30px;
+            }
+
+            .concept {
+                width: 22%;
+                margin: 0
+            }
+
+            .contenedor_parrafo {
+                width: 70%;
+            }
+        }
+
+        .contenedor-imagen {
+            div {
+                height: 13rem;
+            }
+        }
+
+        .contenedor-frase {
+            margin: 0 2.12rem;
+
+            div {
+                p {
+                    font-size: 35px;
+                }
+
+            }
+        }
+
+        .imagenes_proyecto_ {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 408px 400px 277px;
+            padding: 0 1.12rem;
+            grid-template-areas:
+                "imagen-cuadrada_"
+                "imagen-cuadrada"
+                "imagen_grande_";
+        }
+
+        .botones {
+            div {
+                a {
+                    font-size: 56.222px;
+                }
+            }
+        }
+    }
+}
