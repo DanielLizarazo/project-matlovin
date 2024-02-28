@@ -1,18 +1,18 @@
-
 /* NAV de contact por que hay boostrap*/
-.nav{
+.nav {
     a {
-        img{
+        img {
             box-sizing: content-box;
         }
-    }  
-} 
+    }
+}
 
 /* ---------- CONTACT -------- */
 .main-contact {
     display: flex;
     flex-direction: row;
     background-color: rgb(19, 19, 18);
+
     .card {
         width: 40%;
         margin: auto;
@@ -21,84 +21,166 @@
         justify-content: center;
         align-items: center;
         background-color: rgb(19, 19, 18);
-        .card-body{
+
+        .card-body {
             .card-text {
                 font-size: 20px;
                 font-family: PPNeueMontreal-Thin;
                 color: rgba(255, 255, 255, 0.40);
                 font-weight: 700;
             }
-        } 
+        }
     }
+
     .formulario {
         width: 90%;
         padding: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+
         div {
-           width: 80%;
-           form {
-               font-size: 60px;
-               font-family: PPNeueMontreal-Thin;
-               color: #FFF;
-               line-height: normal;
-               .nombre {
-                   width: -webkit-fill-available;
-                   border: none;
-                   border-bottom: 3px solid #FFF;
-                   padding: 0 10px;
-                   margin: 0;
-                   outline: 0;
-                   background: transparent;
-                   font-size: 60px;
-                   color: #FFF;
-                   padding: 5px 0;
-               }
-               textarea {
-                   width: -webkit-fill-available;
-                   height: 15rem;
-                   overflow: auto;
-                   resize: none;
-                   border: none;
-                   outline: 0;
-                   background: transparent;
-                   font-size: 60px;
-                   color: rgb(125, 125, 233);
-                   background-image: url('../resources/Captura\ de\ pantalla\ 2024-02-21\ 110747.png');
-               
-               }
-               .email {
-                   border: none;
-                   border-bottom: 3px solid #fff;
-                   padding: 0 10px;
-                   margin: 0;
-                   width: -webkit-fill-available;
-                   outline: 0;
-                   background: transparent;
-                   font-size: 60px;
-                   color: rgb(125, 125, 233);
-               
-               }
-               .boton {
-                   display: flex;
-                   align-items: center;
-                   justify-content: center;
-                   padding: 3rem;
-                   width: auto;
-                   .boton-enviar {
-                       background: #121111;
-                       border: 2px solid white;
-                       font-size: 25.19px;
-                       padding: 0 2rem;
-                       text-align: center;
-                       font-family: PPNeueMontreal-Thin;
-                       color: #FFF;
-                       border-radius: 100px;
-                   
-                   }
-               }
-           }
+            width: 80%;
+
+            form {
+                font-size: 60px;
+                font-family: PPNeueMontreal-Thin;
+                color: #FFF;
+                line-height: normal;
+
+                .nombre {
+                    width: -webkit-fill-available;
+                    border: none;
+                    border-bottom: 3px solid #FFF;
+                    padding: 0 10px;
+                    margin: 0;
+                    outline: 0;
+                    background: transparent;
+                    font-size: 60px;
+                    color: #FFF;
+                    padding: 5px 0;
+                }
+
+                textarea {
+                    width: -webkit-fill-available;
+                    height: 15rem;
+                    overflow: auto;
+                    resize: none;
+                    border: none;
+                    outline: 0;
+                    background: transparent;
+                    font-size: 60px;
+                    color: rgb(125, 125, 233);
+                    background-image: url('../resources/Captura\ de\ pantalla\ 2024-02-21\ 110747.png');
+
+                }
+
+                .email {
+                    border: none;
+                    border-bottom: 3px solid #fff;
+                    padding: 0 10px;
+                    margin: 0;
+                    width: -webkit-fill-available;
+                    outline: 0;
+                    background: transparent;
+                    font-size: 60px;
+                    color: rgb(125, 125, 233);
+
+                }
+
+                .boton {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 3rem;
+                    width: auto;
+
+                    .boton-enviar {
+                        background: #121111;
+                        border: 2px solid white;
+                        font-size: 25.19px;
+                        padding: 0 2rem;
+                        text-align: center;
+                        font-family: PPNeueMontreal-Thin;
+                        color: #FFF;
+                        border-radius: 100px;
+
+                    }
+                }
+            }
         }
     }
+}
+
+@media (max-width: 1024px) {
+    .main-contact {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            width: 15%;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+
+    .main-contact {
+        .formulario {
+            width: 100%;
+            padding: 1rem;
+
+            div {
+                form {
+                    font-size: 30px;
+
+                    .nombre {
+                        font-size: 30px;
+                    }
+
+                    textarea {
+                        font-size: 30px;
+                        height: 7rem;
+                        background-image: url(../resources/renglon-responsive.png);
+                        background-size: contain;
+                    }
+
+                    .email {
+                        font-size: 30px;
+
+                    }
+
+                    .boton {
+                        .boton-enviar {
+                            font-size: 20.19px;
+                            padding: 1rem 2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .card {
+            .card-body {
+                .card-text {
+                    font-size: 14px;
+                    width: 5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .footer{
+        .contenedor__principal_redes{
+            .contenedor-redes{
+                .nav-redes{
+                    .enlaces-redes-responsive {
+                        padding: 0;
+                    }
+                } 
+            }
+        } 
+    } 
 }

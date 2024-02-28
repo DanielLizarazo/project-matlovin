@@ -612,6 +612,40 @@ body {
             color: #FFF;
             border-radius: 100px; }
 
+@media (max-width: 1024px) {
+  .main-contact {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center; }
+    .main-contact .card {
+      width: 15%;
+      margin: 0; } }
+
+@media (max-width: 426px) {
+  .main-contact .formulario {
+    width: 100%;
+    padding: 1rem; }
+    .main-contact .formulario div form {
+      font-size: 30px; }
+      .main-contact .formulario div form .nombre {
+        font-size: 30px; }
+      .main-contact .formulario div form textarea {
+        font-size: 30px;
+        height: 7rem;
+        background-image: url(../resources/renglon-responsive.png);
+        background-size: contain; }
+      .main-contact .formulario div form .email {
+        font-size: 30px; }
+      .main-contact .formulario div form .boton .boton-enviar {
+        font-size: 20.19px;
+        padding: 1rem 2rem; }
+  .main-contact .card .card-body .card-text {
+    font-size: 14px;
+    width: 5rem;
+    text-align: center; }
+  .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive {
+    padding: 0; } }
+
 /* ------------ footer ----------*/
 .footer {
   height: 20.48rem;
