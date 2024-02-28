@@ -514,115 +514,103 @@ body {
   margin: auto;
   background: #121111;
   max-width: 1520px; }
+  .main-gallery .contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #121111; }
+    .main-gallery .contenedor-galeria img {
+      width: 330px;
+      height: 552px;
+      margin: 10px; }
+      .main-gallery .contenedor-galeria img:hover {
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+        border-radius: 20px; }
 
-.main-gallery .contenedor-galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background: #121111; }
-
-.main-gallery .contenedor-galeria img {
-  width: 330px;
-  height: 552px;
-  margin: 10px; }
-
-.main-gallery .contenedor-galeria img:hover {
-  transform: scale(1.1);
-  transition-duration: 0.5s;
-  border-radius: 20px; }
+/* NAV de contact por que hay boostrap*/
+.nav a img {
+  box-sizing: content-box; }
 
 /* ---------- CONTACT -------- */
-.nav a {
-  width: auto; }
-
 .main-contact {
   display: flex;
   flex-direction: row;
   background-color: #131312; }
-
-.main-contact .card {
-  width: 40%;
-  margin: auto;
-  margin-left: 3.12rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #131312; }
-
-.card .card-body .card-text {
-  font-size: 20px;
-  font-family: PPNeueMontreal-Thin;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 700; }
-
-.formulario {
-  width: 90%;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.formulario div {
-  width: 80%; }
-
-.main-contact form {
-  font-size: 60px;
-  font-family: PPNeueMontreal-Thin;
-  color: #FFF;
-  line-height: normal; }
-
-.formulario .nombre {
-  width: -webkit-fill-available;
-  border: none;
-  border-bottom: 3px solid #FFF;
-  padding: 0 10px;
-  margin: 0;
-  outline: 0;
-  background: transparent;
-  font-size: 60px;
-  color: #FFF;
-  padding: 5px 0; }
-
-.formulario textarea {
-  width: -webkit-fill-available;
-  height: 15rem;
-  overflow: auto;
-  resize: none;
-  border: none;
-  outline: 0;
-  background: transparent;
-  font-size: 60px;
-  color: #7d7de9;
-  background-image: url("../resources/Captura de pantalla 2024-02-21 110747.png"); }
-
-.formulario .email {
-  border: none;
-  border-bottom: 3px solid #fff;
-  padding: 0 10px;
-  margin: 0;
-  width: -webkit-fill-available;
-  outline: 0;
-  background: transparent;
-  font-size: 60px;
-  color: #7d7de9; }
-
-.formulario .boton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem;
-  width: auto; }
-
-.formulario .boton-enviar {
-  background: #121111;
-  border: 2px solid white;
-  font-size: 25.19px;
-  padding: 0 2rem;
-  text-align: center;
-  font-family: PPNeueMontreal-Thin;
-  color: #FFF;
-  border-radius: 100px; }
+  .main-contact .card {
+    width: 40%;
+    margin: auto;
+    margin-left: 3.12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131312; }
+    .main-contact .card .card-body .card-text {
+      font-size: 20px;
+      font-family: PPNeueMontreal-Thin;
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 700; }
+  .main-contact .formulario {
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-contact .formulario div {
+      width: 80%; }
+      .main-contact .formulario div form {
+        font-size: 60px;
+        font-family: PPNeueMontreal-Thin;
+        color: #FFF;
+        line-height: normal; }
+        .main-contact .formulario div form .nombre {
+          width: -webkit-fill-available;
+          border: none;
+          border-bottom: 3px solid #FFF;
+          padding: 0 10px;
+          margin: 0;
+          outline: 0;
+          background: transparent;
+          font-size: 60px;
+          color: #FFF;
+          padding: 5px 0; }
+        .main-contact .formulario div form textarea {
+          width: -webkit-fill-available;
+          height: 15rem;
+          overflow: auto;
+          resize: none;
+          border: none;
+          outline: 0;
+          background: transparent;
+          font-size: 60px;
+          color: #7d7de9;
+          background-image: url("../resources/Captura de pantalla 2024-02-21 110747.png"); }
+        .main-contact .formulario div form .email {
+          border: none;
+          border-bottom: 3px solid #fff;
+          padding: 0 10px;
+          margin: 0;
+          width: -webkit-fill-available;
+          outline: 0;
+          background: transparent;
+          font-size: 60px;
+          color: #7d7de9; }
+        .main-contact .formulario div form .boton {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 3rem;
+          width: auto; }
+          .main-contact .formulario div form .boton .boton-enviar {
+            background: #121111;
+            border: 2px solid white;
+            font-size: 25.19px;
+            padding: 0 2rem;
+            text-align: center;
+            font-family: PPNeueMontreal-Thin;
+            color: #FFF;
+            border-radius: 100px; }
 
 /* ------------ footer ----------*/
 .footer {
