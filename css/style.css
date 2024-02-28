@@ -1,0 +1,758 @@
+@font-face {
+  font-family: PPNeueMontreal-Thin;
+  src: url(../resources/PPNeueMontreal-Thin.otf); }
+
+@font-face {
+  font-family: PPNeueMontreal-SemiBolditalic;
+  src: url(../resources/PPNeueMontreal-SemiBolditalic.otf); }
+
+@font-face {
+  font-family: PPNeueMontreal-Medium;
+  src: url(../resources/PPNeueMontreal-Medium.otf); }
+
+@font-face {
+  font-family: PPNeueMontreal-italic;
+  src: url(../resources/PPNeueMontreal-Italic.otf); }
+
+@font-face {
+  font-family: PPNeueMontreal-Book;
+  src: url(../resources/PPNeueMontreal-Book.otf); }
+
+@font-face {
+  font-family: PPNeueMontreal-Bold;
+  src: url(../resources/PPNeueMontreal-Bold.otf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: PPNeueMontreal-Thin; }
+
+/* ----------- NAV --------*/
+body {
+  background-color: #121111; }
+
+.nav {
+  /* width: 100vw; */
+  height: 9.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121111; }
+  .nav a img {
+    width: 8.5rem;
+    padding-left: 3.12rem;
+    padding-top: 10px; }
+  .nav ul {
+    display: flex;
+    margin-right: 3.12rem;
+    list-style: none;
+    justify-content: space-around; }
+    .nav ul li {
+      margin: 0 2rem; }
+      .nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 30.14px; }
+
+@media (max-width: 768px) {
+  /* -------- query nav --------- */
+  .nav {
+    height: 7.5rem;
+    flex-direction: column;
+    justify-content: space-around; }
+    .nav a img {
+      width: 12rem;
+      padding-left: 0; }
+    .nav ul {
+      margin-right: 0; } }
+
+@media (max-width: 426px) {
+  /* -------- query nav --------- */
+  .nav ul li {
+    margin: 0 1rem; }
+    .nav ul li a {
+      font-size: 20px; }
+  .header-index h1 {
+    font-size: 44px; } }
+
+/* ------------ HEADER-INDEX------*/
+.header-index {
+  /* width: 100vw; */
+  height: 56.4rem;
+  background-color: #121111;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .header-index h1 {
+    width: 1139px;
+    font-family: PPNeueMontreal-Thin;
+    font-size: 84.251px;
+    color: #fff;
+    margin: 0 3.12rem;
+    font-weight: 400; }
+    .header-index h1 .brand {
+      color: #FFB59D;
+      text-decoration: 4px underline; }
+    .header-index h1 .digital {
+      color: #C0A9FF;
+      text-decoration: 4px underline; }
+
+/* ---------- MAIN-INDEX ----------*/
+.main-index {
+  /* width: 100vw; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #121111; }
+  .main-index section {
+    /* -------con GRID---------- */
+    display: grid;
+    background-color: #121111;
+    margin: 0 1rem 0 3.12rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    grid-template-areas: "link-last-project link-last-project link-gallery" "link-last-project link-last-project link-gallery" "link-last-project link-last-project link-gallery"; }
+    .main-index section .link-last-project {
+      grid-area: link-last-project;
+      /* background-image: url('./resources/Screen\ Shot\ 2024-02-14\ at\ 2.19\ 1.png');
+                background-size: cover; */
+      width: 100%; }
+      .main-index section .link-last-project img {
+        width: 100%;
+        /* width: 1200px;
+                    height: 639px */ }
+    .main-index section .link-gallery {
+      grid-area: link-gallery;
+      background-color: #FFB59D;
+      width: 85%;
+      border-radius: 80px; }
+      .main-index section .link-gallery a {
+        /* width: 100%; */
+        height: 100%;
+        border-radius: 80px;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .main-index section .link-gallery a h2 {
+          color: #FFF;
+          font-size: 126.788px;
+          font-style: normal;
+          rotate: -90deg;
+          margin: 0rem -5rem 0rem 0rem; }
+
+/* -----------MEDIA QUERYS---------- */
+@media (max-width: 1024px) {
+  .main-index section .link-gallery a h2 {
+    font-size: 86.788px;
+    margin: 0rem -4rem 0rem 0rem; } }
+
+@media (max-width: 768px) {
+  .header-index {
+    height: fit-content;
+    padding: 4rem 0; }
+    .header-index h1 {
+      font-size: 70px; }
+  /* -------con GRID---------- */
+  .main-index section {
+    display: grid;
+    margin: 0 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.8fr;
+    justify-items: center;
+    align-content: space-around;
+    grid-template-areas: "link-last-project link-last-project " "link-gallery link-gallery"; }
+    .main-index section .link-gallery {
+      border-radius: 55px; }
+      .main-index section .link-gallery a {
+        border-radius: 55px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main-index section .link-gallery a h2 {
+          font-size: 90.788px;
+          rotate: 0deg;
+          margin: auto; } }
+
+@media (max-width: 426px) {
+  .header-index {
+    height: fit-content;
+    padding: 4rem 0; }
+    .header-index h1 {
+      font-size: 30px; }
+  /*-----------query main-index ---------- */
+  .main-index section {
+    display: grid;
+    margin: 0 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr;
+    justify-items: center;
+    align-content: space-around;
+    grid-template-areas: "link-last-project" "link-gallery"; }
+    .main-index section .link-gallery {
+      width: 100%;
+      border-radius: 20px; }
+      .main-index section .link-gallery a h2 {
+        font-size: 50.788px; } }
+
+/* ---------- MAIN-WORK -----------*/
+.header_pages {
+  background-color: #121111; }
+  .header_pages nav {
+    margin-left: 3.12rem;
+    height: 4rem;
+    display: flex;
+    align-items: center; }
+    .header_pages nav ul {
+      display: flex; }
+      .header_pages nav ul li {
+        margin-right: 3rem;
+        list-style: none; }
+        .header_pages nav ul li a {
+          color: #FFF;
+          text-decoration: none;
+          font-size: 33.104px; }
+
+.main-work {
+  display: flex;
+  flex-direction: column;
+  background-color: #121111; }
+  .main-work section {
+    display: flex;
+    margin: 0.2rem 3.12rem 0.2rem 3.12rem;
+    align-items: center; }
+    .main-work section article {
+      padding: 0 0.2rem 0 0.2rem; }
+      .main-work section article img {
+        border-radius: 10px;
+        width: 100%; }
+
+/* PRIMER BLOQUE */
+.primer_bloque .jende {
+  width: 45%; }
+
+.primer_bloque .ecosistema {
+  width: 60%; }
+
+/* SEGUNDO BLOQUE */
+.segundo_bloque .namnam {
+  width: 102%; }
+
+.segundo_bloque .dixie {
+  width: 100%; }
+
+/* TERCER BLOQUE */
+.tercer_bloque article {
+  width: 33.3%; }
+
+/* CUARTO BLOQUE */
+.cuarto_bloque {
+  justify-content: space-around; }
+
+.cuarto_bloque .altiplano {
+  width: 100%; }
+
+/* --------- QUERY MAIN WORK------ */
+@media (max-width: 768px) {
+  .header_pages nav ul li a {
+    font-size: 22.104px; }
+  .main-work .tercer_bloque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main-work .tercer_bloque article {
+      width: 48.3%; } }
+
+@media (max-width: 426px) {
+  /* --------- MAIN WORK------ */
+  .header_pages nav {
+    justify-content: center;
+    margin: 0; }
+    .header_pages nav ul li {
+      margin: 0 1rem;
+      list-style: none; }
+      .header_pages nav ul li a {
+        font-size: 20.104px; }
+  .main-work section {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem 1.12rem 0.1rem 1.12rem;
+    align-items: center; }
+  /* PRIMER BLOQUE */
+  .primer_bloque .jende {
+    width: 100%; }
+  .primer_bloque .ecosistema {
+    width: 100%; }
+  /* SEGUNDO BLOQUE */
+  .segundo_bloque .namnam {
+    width: 100%; }
+  .segundo_bloque .dixie {
+    width: 100%; }
+  /* TERCER BLOQUE */
+  .tercer_bloque article {
+    width: 100%;
+    margin: 0.5px 0; } }
+
+/* -----------  MAIN PROJECT ----------- */
+.header-project {
+  padding: 3.12rem;
+  background-color: #121111; }
+
+.header-project h1 {
+  color: #FFF;
+  font-size: 80px; }
+
+.header-project h1 .jende {
+  color: #FFD075; }
+
+.main-project {
+  background-color: #121111; }
+
+.main-project p {
+  color: #FFF; }
+
+.main-project .sub-header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 3.12rem;
+  border-bottom: 1px solid #FFF; }
+
+.main-project .sub-header div {
+  padding-bottom: 1rem; }
+
+.main-project .sub-header div p {
+  font-size: 20px; }
+
+.main-project .sub-header div svg {
+  padding: 0 10px; }
+
+.main-project .descripcion {
+  height: 10%;
+  padding: 5rem 3rem; }
+
+.main-project .descripcion p {
+  width: 50%;
+  font-size: 25px;
+  line-height: 39px; }
+
+/* ----------GRID IMAGENES ---------- */
+.imagenes_proyecto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  padding: 0 3.12rem;
+  grid-template-areas: "imagen_grande imagen_grande imagen_grande" "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"; }
+
+.imagen-cuadrada {
+  grid-area: imagen-cuadrada;
+  background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_6.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border-radius: 10px; }
+
+.imagen-cuadrada_ {
+  grid-area: imagen-cuadrada_;
+  background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_7.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border-radius: 10px; }
+
+.imagen_grande {
+  grid-area: imagen_grande;
+  background-image: url("../resources/JENDE NEW FEED MAYO-55.JPG");
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border-radius: 10px; }
+
+.main-project .contenedor-concepto {
+  display: flex;
+  padding: 5rem 3rem;
+  justify-content: space-between; }
+
+.main-project .contenedor-concepto p {
+  font-size: 25px;
+  line-height: 39px; }
+
+.main-project .contenedor-concepto .concept {
+  width: 40%;
+  text-align: center;
+  margin: auto; }
+
+.main-project .contenedor-concepto .concept p {
+  text-decoration: underline; }
+
+.main-project .contenedor-concepto .contenedor_parrafo {
+  width: 42%; }
+
+.main-project .contenedor-imagen {
+  width: 93%;
+  margin: auto; }
+
+.main-project .contenedor-imagen div {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/7aada9149536781.62e9520ea60f5.jpg");
+  background-size: cover;
+  height: 50rem;
+  border-radius: 20px; }
+
+.main-project .contenedor-frase {
+  height: auto;
+  margin: 0 3.12rem; }
+
+.main-project .contenedor-frase div {
+  width: 75%;
+  padding: 4rem 0; }
+
+.main-project .contenedor-frase p {
+  font-size: 80px; }
+
+.imagenes_proyecto_ {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  padding: 0 3.12rem;
+  grid-template-areas: "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada" "imagen_grande_ imagen_grande_ imagen_grande_"; }
+
+.imagen-cuadrada {
+  grid-area: imagen-cuadrada;
+  background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_6.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border-radius: 10px; }
+
+.imagen-cuadrada_ {
+  grid-area: imagen-cuadrada_;
+  background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_7.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border-radius: 10px; }
+
+.imagen_grande_ {
+  grid-area: imagen_grande_;
+  background-image: url("	https://mir-s3-cdn-cf.behance.net/project_modules/1400/e09740149536781.655e4dc0594a0.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border-radius: 10px; }
+
+.main-project .botones {
+  padding: 2rem; }
+
+.main-project .botones div {
+  display: flex;
+  justify-content: space-around; }
+
+.main-project .botones div a {
+  font-size: 129.222px;
+  text-decoration: none;
+  color: #FFF; }
+
+.botones div a:hover {
+  text-decoration: 2px underline;
+  color: #A1FEDD;
+  font-size: 100.222px;
+  transition: all 0.5s; }
+
+/* -----------MEDIA QUERYS---------- */
+@media (max-width: 1024px) {
+  .main-project .contenedor-imagen div {
+    height: 36rem; } }
+
+@media (max-width: 768px) {
+  /* --------query project ----- */
+  .header-project h1 {
+    font-size: 66px; }
+  .main-project .sub-header div p {
+    font-size: 16px; }
+  .main-project .sub-header div svg {
+    padding: 0 7px; }
+  .main-project .descripcion p {
+    width: 80%;
+    font-size: 20px;
+    line-height: 35px; }
+  .imagenes_proyecto {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    padding: 0 1.12rem;
+    grid-template-areas: "imagen_grande imagen_grande imagen_grande" "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"; }
+  .main-project .contenedor-concepto .contenedor_parrafo {
+    width: 55%; }
+  .main-project .contenedor-concepto p {
+    font-size: 20px;
+    line-height: 35px; }
+  .main-project .contenedor-imagen {
+    width: 94%; }
+  .main-project .contenedor-imagen div {
+    height: 29rem; }
+  .main-project .contenedor-frase p {
+    font-size: 60px; }
+  .imagenes_proyecto_ {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    padding: 0 1.12rem;
+    grid-template-areas: "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada" "imagen_grande_ imagen_grande_ imagen_grande_"; }
+  .main-project .botones div a {
+    font-size: 84.222px; }
+  .footer .nav-footer__hidden {
+    height: 2rem; } }
+
+@media (max-width: 426px) {
+  /* --------MAIN PROJECT-------- */
+  .header-project h1 {
+    font-size: 36px; }
+  .main-project .sub-header {
+    margin: 0 2.12rem; }
+  .main-project .sub-header div p {
+    font-size: 13px; }
+  .main-project .descripcion {
+    height: 10%;
+    padding: 2rem 2rem; }
+  .main-project .descripcion p {
+    width: 90%;
+    font-size: 17px;
+    line-height: 30px; }
+  .imagenes_proyecto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 400px;
+    padding: 0 1rem;
+    grid-template-areas: "imagen_grande" "imagen-cuadrada_" "imagen-cuadrada"; }
+  .main-project .contenedor-concepto {
+    padding: 3rem 1rem; }
+  .main-project .contenedor-concepto .concept {
+    width: 22%;
+    margin: 0; }
+  .main-project .contenedor-concepto .contenedor_parrafo {
+    width: 70%; }
+  .main-project .contenedor-concepto p {
+    font-size: 17px;
+    line-height: 30px; }
+  .main-project .contenedor-imagen div {
+    height: 13rem; }
+  .main-project .contenedor-frase {
+    margin: 0 2.12rem; }
+  .main-project .contenedor-frase p {
+    font-size: 35px; }
+  .imagenes_proyecto_ {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 408px 400px 277px;
+    padding: 0 1.12rem;
+    grid-template-areas: "imagen-cuadrada_" "imagen-cuadrada" "imagen_grande_"; }
+  .main-project .botones div a {
+    font-size: 56.222px; } }
+
+/* -------------------- GALLERY -------------*/
+.main-gallery {
+  margin: auto;
+  background: #121111;
+  max-width: 1520px; }
+
+.main-gallery .contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #121111; }
+
+.main-gallery .contenedor-galeria img {
+  width: 330px;
+  height: 552px;
+  margin: 10px; }
+
+.main-gallery .contenedor-galeria img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  border-radius: 20px; }
+
+/* ---------- CONTACT -------- */
+.nav a {
+  width: auto; }
+
+.main-contact {
+  display: flex;
+  flex-direction: row;
+  background-color: #131312; }
+
+.main-contact .card {
+  width: 40%;
+  margin: auto;
+  margin-left: 3.12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131312; }
+
+.card .card-body .card-text {
+  font-size: 20px;
+  font-family: PPNeueMontreal-Thin;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700; }
+
+.formulario {
+  width: 90%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.formulario div {
+  width: 80%; }
+
+.main-contact form {
+  font-size: 60px;
+  font-family: PPNeueMontreal-Thin;
+  color: #FFF;
+  line-height: normal; }
+
+.formulario .nombre {
+  width: -webkit-fill-available;
+  border: none;
+  border-bottom: 3px solid #FFF;
+  padding: 0 10px;
+  margin: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 60px;
+  color: #FFF;
+  padding: 5px 0; }
+
+.formulario textarea {
+  width: -webkit-fill-available;
+  height: 15rem;
+  overflow: auto;
+  resize: none;
+  border: none;
+  outline: 0;
+  background: transparent;
+  font-size: 60px;
+  color: #7d7de9;
+  background-image: url("../resources/Captura de pantalla 2024-02-21 110747.png"); }
+
+.formulario .email {
+  border: none;
+  border-bottom: 3px solid #fff;
+  padding: 0 10px;
+  margin: 0;
+  width: -webkit-fill-available;
+  outline: 0;
+  background: transparent;
+  font-size: 60px;
+  color: #7d7de9; }
+
+.formulario .boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  width: auto; }
+
+.formulario .boton-enviar {
+  background: #121111;
+  border: 2px solid white;
+  font-size: 25.19px;
+  padding: 0 2rem;
+  text-align: center;
+  font-family: PPNeueMontreal-Thin;
+  color: #FFF;
+  border-radius: 100px; }
+
+/* ------------ footer ----------*/
+.footer {
+  height: 20.48rem;
+  background-color: #121111; }
+  .footer .nav-footer {
+    height: 13rem; }
+    .footer .nav-footer .enlaces-footer {
+      height: 13rem;
+      /* width: 90%; */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 3.12rem;
+      list-style: none; }
+      .footer .nav-footer .enlaces-footer li {
+        margin: 0 2rem; }
+        .footer .nav-footer .enlaces-footer li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 30.14px; }
+  .footer .contenedor__principal_redes {
+    display: flex;
+    justify-content: center; }
+    .footer .contenedor__principal_redes .contenedor-redes {
+      width: 90%;
+      height: 87px;
+      border-top: 1px solid #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes {
+        display: flex;
+        list-style: none; }
+        .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes li {
+          margin: 0 1.5rem; }
+          .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 22.34px; }
+      .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive {
+        display: none;
+        list-style: none; }
+        .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive li {
+          margin: 0 1rem; }
+          .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20.34px; }
+      .footer .contenedor__principal_redes .contenedor-redes h3 {
+        color: rgba(255, 255, 255, 0.4);
+        margin-right: 3.12rem; }
+
+.footer__pages {
+  /* width: 100vw; */
+  height: 10rem;
+  background-color: #121111; }
+
+.footer .nav-footer__hidden {
+  height: 4rem;
+  visibility: hidden; }
+
+/* --------- query footer ----------*/
+@media (max-width: 768px) {
+  .footer {
+    height: 10rem; }
+    .footer .nav-footer {
+      height: 5rem; }
+      .footer .nav-footer .enlaces-footer {
+        height: auto;
+        margin: auto;
+        justify-content: center;
+        padding-top: 2rem; }
+    .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes {
+      display: none; }
+    .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive {
+      display: flex; }
+    .footer .contenedor__principal_redes .contenedor-redes h3 {
+      font-size: 1rem;
+      margin-right: 1.12rem; } }
+
+@media (max-width: 426px) {
+  /* --------- query footer ----------*/
+  .footer .nav-footer .enlaces-footer li {
+    margin: 0 1rem; }
+    .footer .nav-footer .enlaces-footer li a {
+      font-size: 20px; }
+  .footer .contenedor__principal_redes .contenedor-redes h3 {
+    font-size: 10px;
+    margin-right: 0; } }

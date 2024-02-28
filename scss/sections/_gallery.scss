@@ -1,0 +1,30 @@
+
+/* -------------------- GALLERY -------------*/
+
+.main-gallery {
+    margin: auto;
+    background: #121111;
+    max-width: 1520px;
+}
+
+.main-gallery .contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #121111;
+}
+
+.main-gallery .contenedor-galeria img {
+    width: 330px;
+    height: 552px;
+    margin: 10px
+}
+
+.main-gallery .contenedor-galeria img:hover {
+
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    border-radius: 20px;
+}
+

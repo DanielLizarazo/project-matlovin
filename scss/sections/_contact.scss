@@ -1,0 +1,108 @@
+
+/* ---------- CONTACT -------- */
+
+.nav a {
+    width: auto;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(19, 19, 18);
+}
+
+.main-contact .card {
+    width: 40%;
+    margin: auto;
+    margin-left: 3.12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 19, 18);
+}
+
+.card .card-body .card-text {
+    font-size: 20px;
+    font-family: PPNeueMontreal-Thin;
+    color: rgba(255, 255, 255, 0.40);
+    font-weight: 700;
+}
+
+.formulario {
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario div {
+    width: 80%
+}
+
+.main-contact form {
+    font-size: 60px;
+    font-family: PPNeueMontreal-Thin;
+    color: #FFF;
+    line-height: normal;
+}
+
+.formulario .nombre {
+    width: -webkit-fill-available;
+    border: none;
+    border-bottom: 3px solid #FFF;
+    padding: 0 10px;
+    margin: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 60px;
+    color: #FFF;
+    padding: 5px 0;
+}
+
+.formulario textarea {
+    width: -webkit-fill-available;
+    height: 15rem;
+    overflow: auto;
+    resize: none;
+    border: none;
+    outline: 0;
+    background: transparent;
+    font-size: 60px;
+    color: rgb(125, 125, 233);
+    background-image: url('../resources/Captura\ de\ pantalla\ 2024-02-21\ 110747.png');
+
+}
+
+.formulario .email {
+    border: none;
+    border-bottom: 3px solid #fff;
+    padding: 0 10px;
+    margin: 0;
+    width: -webkit-fill-available;
+    outline: 0;
+    background: transparent;
+    font-size: 60px;
+    color: rgb(125, 125, 233);
+
+}
+
+.formulario .boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    width: auto;
+}
+
+.formulario .boton-enviar {
+    background: #121111;
+    border: 2px solid white;
+    font-size: 25.19px;
+    padding: 0 2rem;
+    text-align: center;
+    font-family: PPNeueMontreal-Thin;
+    color: #FFF;
+    border-radius: 100px;
+
+}

@@ -1,0 +1,169 @@
+/* ---------- MAIN-WORK -----------*/
+.header_pages {
+    background-color: #121111;
+
+    nav {
+        margin-left: 3.12rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                margin-right: 3rem;
+                list-style: none;
+
+                a {
+                    color: #FFF;
+                    text-decoration: none;
+                    font-size: 33.104px;
+                }
+            }
+        }
+    }
+}
+
+.main-work {
+    display: flex;
+    flex-direction: column;
+    background-color: #121111;
+
+    section {
+        display: flex;
+        margin: 0.2rem 3.12rem 0.2rem 3.12rem;
+        align-items: center;
+
+        article {
+            padding: 0 0.2rem 0 0.2rem;
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+/* PRIMER BLOQUE */
+
+.primer_bloque .jende {
+    width: 45%;
+}
+
+.primer_bloque .ecosistema {
+    width: 60%;
+}
+
+/* SEGUNDO BLOQUE */
+
+.segundo_bloque .namnam {
+    width: 102%;
+}
+
+.segundo_bloque .dixie {
+    width: 100%;
+}
+
+/* TERCER BLOQUE */
+
+.tercer_bloque article {
+    width: 33.3%;
+}
+
+/* CUARTO BLOQUE */
+
+.cuarto_bloque {
+    justify-content: space-around;
+}
+
+.cuarto_bloque .altiplano {
+    width: 100%;
+}
+
+/* --------- QUERY MAIN WORK------ */
+
+@media (max-width: 768px) {
+
+    .header_pages {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 22.104px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-work{
+        .tercer_bloque {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            article {
+                width: 48.3%;
+            }
+        }
+    } 
+}
+
+@media (max-width: 426px) {
+
+    /* --------- MAIN WORK------ */
+    .header_pages{
+        nav {
+            justify-content: center;
+            margin: 0;
+            ul{
+                li {
+                    margin: 0 1rem;
+                    list-style: none;
+                    a {
+                        font-size: 20.104px;
+                    }
+                }
+            }
+        }
+    } 
+
+    .main-work{
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 0.1rem 1.12rem 0.1rem 1.12rem;
+            align-items: center;
+            // width: 100%;
+        }
+    } 
+
+    /* PRIMER BLOQUE */
+
+    .primer_bloque .jende {
+        width: 100%;
+    }
+
+    .primer_bloque .ecosistema {
+        width: 100%;
+    }
+
+    /* SEGUNDO BLOQUE */
+
+    .segundo_bloque .namnam {
+        width: 100%;
+    }
+
+    .segundo_bloque .dixie {
+        width: 100%;
+    }
+
+    /* TERCER BLOQUE */
+
+    .tercer_bloque article {
+        width: 100%;
+        margin: 0.5px 0;
+    }
+}
