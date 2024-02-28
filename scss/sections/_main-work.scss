@@ -38,50 +38,52 @@
         article {
             padding: 0 0.2rem 0 0.2rem;
 
-            img {
-                border-radius: 10px;
-                width: 100%;
+            a {
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                }
+
             }
+        }
+
+        /* PRIMER BLOQUE */
+        .jende {
+            width: 45%;
+        }
+
+        .ecosistema {
+            width: 60%;
+        }
+
+        /* SEGUNDO BLOQUE */
+        .namnam {
+            width: 102%;
+        }
+
+        .dixie {
+            width: 100%;
         }
     }
 
+    /* TERCER BLOQUE */
+
+    .tercer_bloque {
+        article {
+            width: 33.3%;
+        }
+    }
+
+    /* CUARTO BLOQUE */
+    .cuarto_bloque {
+        justify-content: space-around;
+
+        .altiplano {
+            width: 100%;
+        }
+    }
 }
 
-/* PRIMER BLOQUE */
-
-.primer_bloque .jende {
-    width: 45%;
-}
-
-.primer_bloque .ecosistema {
-    width: 60%;
-}
-
-/* SEGUNDO BLOQUE */
-
-.segundo_bloque .namnam {
-    width: 102%;
-}
-
-.segundo_bloque .dixie {
-    width: 100%;
-}
-
-/* TERCER BLOQUE */
-
-.tercer_bloque article {
-    width: 33.3%;
-}
-
-/* CUARTO BLOQUE */
-
-.cuarto_bloque {
-    justify-content: space-around;
-}
-
-.cuarto_bloque .altiplano {
-    width: 100%;
-}
 
 /* --------- QUERY MAIN WORK------ */
 
@@ -99,71 +101,66 @@
         }
     }
 
-    .main-work{
+    .main-work {
         .tercer_bloque {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+
             article {
                 width: 48.3%;
             }
         }
-    } 
+    }
 }
 
 @media (max-width: 426px) {
 
     /* --------- MAIN WORK------ */
-    .header_pages{
+    .header_pages {
         nav {
             justify-content: center;
             margin: 0;
-            ul{
+
+            ul {
                 li {
                     margin: 0 1rem;
                     list-style: none;
+
                     a {
                         font-size: 20.104px;
                     }
                 }
             }
         }
-    } 
+    }
 
-    .main-work{
+    .main-work {
         section {
             display: flex;
             flex-direction: column;
             margin: 0.1rem 1.12rem 0.1rem 1.12rem;
             align-items: center;
-            // width: 100%;
+            article {
+                width: 100%;
+            }
+
+            /* PRIMER BLOQUE */
+            .jende {
+                width: 100%;
+            }
+
+            .ecosistema {
+                width: 100%;
+            }
         }
-    } 
 
-    /* PRIMER BLOQUE */
-
-    .primer_bloque .jende {
-        width: 100%;
-    }
-
-    .primer_bloque .ecosistema {
-        width: 100%;
-    }
-
-    /* SEGUNDO BLOQUE */
-
-    .segundo_bloque .namnam {
-        width: 100%;
-    }
-
-    .segundo_bloque .dixie {
-        width: 100%;
-    }
-
-    /* TERCER BLOQUE */
-
-    .tercer_bloque article {
-        width: 100%;
-        margin: 0.5px 0;
+        /* TERCER BLOQUE */
+        .tercer_bloque {
+            article {
+                width: 100%;
+                margin: 0.5px 0;
+            }
+        }
     }
 }
