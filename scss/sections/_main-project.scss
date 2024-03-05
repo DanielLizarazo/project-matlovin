@@ -344,20 +344,22 @@
         }
 
         .contenedor-concepto {
-            padding: 3rem 1rem;
-
-            p {
-                font-size: 17px;
-                line-height: 30px;
-            }
-
+            padding: 3rem 1rem;            
             .concept {
                 width: 22%;
-                margin: 0
+                margin: 0;
+                p {
+                    font-size: 17px;
+                    line-height: 30px;
+                }
             }
 
             .contenedor_parrafo {
                 width: 70%;
+                p {
+                    font-size: 17px;
+                    line-height: 33px;
+                }
             }
         }
 
@@ -372,7 +374,7 @@
 
             div {
                 p {
-                    font-size: 35px;
+                    font-size: 30px;
                 }
 
             }

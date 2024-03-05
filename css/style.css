@@ -486,20 +486,23 @@ body {
     grid-template-areas: "imagen_grande" "imagen-cuadrada_" "imagen-cuadrada"; }
   .main-project .contenedor-concepto {
     padding: 3rem 1rem; }
-    .main-project .contenedor-concepto p {
-      font-size: 17px;
-      line-height: 30px; }
     .main-project .contenedor-concepto .concept {
       width: 22%;
       margin: 0; }
+      .main-project .contenedor-concepto .concept p {
+        font-size: 17px;
+        line-height: 30px; }
     .main-project .contenedor-concepto .contenedor_parrafo {
       width: 70%; }
+      .main-project .contenedor-concepto .contenedor_parrafo p {
+        font-size: 17px;
+        line-height: 33px; }
   .main-project .contenedor-imagen div {
     height: 13rem; }
   .main-project .contenedor-frase {
     margin: 0 2.12rem; }
     .main-project .contenedor-frase div p {
-      font-size: 35px; }
+      font-size: 30px; }
   .main-project .imagenes_proyecto_ {
     display: grid;
     grid-template-columns: 1fr;
@@ -622,27 +625,34 @@ body {
       margin: 0; } }
 
 @media (max-width: 426px) {
-  .main-contact .formulario {
-    width: 100%;
-    padding: 1rem; }
-    .main-contact .formulario div form {
-      font-size: 30px; }
-      .main-contact .formulario div form .nombre {
+  .nav ul {
+    margin: 0;
+    padding: 0; }
+  .main-contact {
+    background: #121111; }
+    .main-contact .formulario {
+      width: 100%;
+      padding: 3rem 1rem 0; }
+      .main-contact .formulario div form {
         font-size: 30px; }
-      .main-contact .formulario div form textarea {
-        font-size: 30px;
-        height: 7rem;
-        background-image: url(../resources/renglon-responsive.png);
-        background-size: contain; }
-      .main-contact .formulario div form .email {
-        font-size: 30px; }
-      .main-contact .formulario div form .boton .boton-enviar {
-        font-size: 20.19px;
-        padding: 1rem 2rem; }
-  .main-contact .card .card-body .card-text {
-    font-size: 14px;
-    width: 5rem;
-    text-align: center; }
+        .main-contact .formulario div form .nombre {
+          font-size: 30px; }
+        .main-contact .formulario div form textarea {
+          font-size: 30px;
+          height: 7rem;
+          background-image: url(../resources/renglon-responsive.png);
+          background-size: contain; }
+        .main-contact .formulario div form .email {
+          font-size: 30px; }
+        .main-contact .formulario div form .boton .boton-enviar {
+          font-size: 20.19px;
+          padding: 1rem 2rem; }
+    .main-contact .card {
+      border: none; }
+      .main-contact .card .card-body .card-text {
+        font-size: 14px;
+        width: 5rem;
+        text-align: center; }
   .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive {
     padding: 0; } }
 

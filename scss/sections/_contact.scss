@@ -127,10 +127,18 @@
 
 @media (max-width: 426px) {
 
+    .nav{
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
     .main-contact {
+        background: #121111;
         .formulario {
             width: 100%;
-            padding: 1rem;
+            padding: 3rem 1rem 0;
 
             div {
                 form {
@@ -163,6 +171,7 @@
         }
 
         .card {
+            border: none;
             .card-body {
                 .card-text {
                     font-size: 14px;
