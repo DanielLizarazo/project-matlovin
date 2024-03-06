@@ -65,7 +65,7 @@
 
         .imagen-cuadrada {
             grid-area: imagen-cuadrada;
-            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
+            background-image: url('../resources/jende_6.webp');
             background-size: cover;
             background-position: center;
             margin: 1rem 0.5rem 0 0.5rem;
@@ -74,7 +74,7 @@
 
         .imagen-cuadrada_ {
             grid-area: imagen-cuadrada_;
-            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
+            background-image: url('../resources/jende_7.webp');
             background-size: cover;
             background-position: center;
             margin: 1rem 0.5rem 0 0.5rem;
@@ -83,7 +83,7 @@
 
         .imagen_grande {
             grid-area: imagen_grande;
-            background-image: url('../resources/JENDE\ NEW\ FEED\ MAYO-55.JPG');
+            background-image: url('../resources/jende_8.webp');
             background-size: cover;
             background-position: center;
             margin: 1rem 0.5rem 0 0.5rem;
@@ -156,7 +156,7 @@
 
         .imagen-cuadrada {
             grid-area: imagen-cuadrada;
-            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_6.jpg');
+            background-image: url('../resources/jende_6.webp');
             background-size: cover;
             background-position: center;
             margin: 1rem 0.5rem 0 0.5rem;
@@ -165,7 +165,7 @@
 
         .imagen-cuadrada_ {
             grid-area: imagen-cuadrada_;
-            background-image: url('../resources/JENDE\ -\ PHOTOS\ BY\ OSCAR\ APONTE_7.jpg');
+            background-image: url('../resources/jende_7.webp');
             background-size: cover;
             background-position: center;
             margin: 1rem 0.5rem 0 0.5rem;
@@ -207,6 +207,7 @@
 
 
 /* -----------MEDIA QUERYS---------- */
+
 @media (max-width: 1024px) {
     .main-project {
         .contenedor-imagen {
@@ -299,11 +300,19 @@
             div {
                 a {
                     font-size: 84.222px;
+                    &:hover {
+                        text-decoration: 2px underline;
+                        color: $amarillo;
+                        font-size: 70.222px;
+                        transition: all 0.5s;
+                    }
                 }
             }
         }
     }
 }
+
+
 
 @media (max-width: 426px) {
     /* --------MAIN PROJECT-------- */
@@ -403,6 +412,12 @@
             div {
                 a {
                     font-size: 56.222px;
+                    &:hover {
+                        text-decoration: 2px underline;
+                        color: $amarillo;
+                        font-size: 40.222px;
+                        transition: all 0.5s;
+                    }
                 }
             }
         }

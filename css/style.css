@@ -55,7 +55,8 @@ body {
         font-size: 30.14px; }
         .nav ul li a h1 {
           font-size: 40px;
-          text-decoration: 2px overline; }
+          text-decoration: 2px overline;
+          font-weight: 600; }
 
 @media (max-width: 768px) {
   /* -------- query nav --------- */
@@ -343,21 +344,21 @@ body {
     grid-template-areas: "imagen_grande imagen_grande imagen_grande" "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada"; }
     .main-project .imagenes_proyecto .imagen-cuadrada {
       grid-area: imagen-cuadrada;
-      background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_6.jpg");
+      background-image: url("../resources/jende_6.webp");
       background-size: cover;
       background-position: center;
       margin: 1rem 0.5rem 0 0.5rem;
       border-radius: 10px; }
     .main-project .imagenes_proyecto .imagen-cuadrada_ {
       grid-area: imagen-cuadrada_;
-      background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_7.jpg");
+      background-image: url("../resources/jende_7.webp");
       background-size: cover;
       background-position: center;
       margin: 1rem 0.5rem 0 0.5rem;
       border-radius: 10px; }
     .main-project .imagenes_proyecto .imagen_grande {
       grid-area: imagen_grande;
-      background-image: url("../resources/JENDE NEW FEED MAYO-55.JPG");
+      background-image: url("../resources/jende_8.webp");
       background-size: cover;
       background-position: center;
       margin: 1rem 0.5rem 0 0.5rem;
@@ -402,14 +403,14 @@ body {
     grid-template-areas: "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada" "imagen_grande_ imagen_grande_ imagen_grande_"; }
     .main-project .imagenes_proyecto_ .imagen-cuadrada {
       grid-area: imagen-cuadrada;
-      background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_6.jpg");
+      background-image: url("../resources/jende_6.webp");
       background-size: cover;
       background-position: center;
       margin: 1rem 0.5rem 0 0.5rem;
       border-radius: 10px; }
     .main-project .imagenes_proyecto_ .imagen-cuadrada_ {
       grid-area: imagen-cuadrada_;
-      background-image: url("../resources/JENDE - PHOTOS BY OSCAR APONTE_7.jpg");
+      background-image: url("../resources/jende_7.webp");
       background-size: cover;
       background-position: center;
       margin: 1rem 0.5rem 0 0.5rem;
@@ -477,7 +478,12 @@ body {
     padding: 0 1.12rem;
     grid-template-areas: "imagen-cuadrada_ imagen-cuadrada imagen-cuadrada" "imagen_grande_ imagen_grande_ imagen_grande_"; }
   .main-project .botones div a {
-    font-size: 84.222px; } }
+    font-size: 84.222px; }
+    .main-project .botones div a:hover {
+      text-decoration: 2px underline;
+      color: #FFD075;
+      font-size: 70.222px;
+      transition: all 0.5s; } }
 
 @media (max-width: 426px) {
   /* --------MAIN PROJECT-------- */
@@ -527,7 +533,12 @@ body {
     padding: 0 1.12rem;
     grid-template-areas: "imagen-cuadrada_" "imagen-cuadrada" "imagen_grande_"; }
   .main-project .botones div a {
-    font-size: 56.222px; } }
+    font-size: 56.222px; }
+    .main-project .botones div a:hover {
+      text-decoration: 2px underline;
+      color: #FFD075;
+      font-size: 40.222px;
+      transition: all 0.5s; } }
 
 /* -------------------- GALLERY -------------*/
 .main-gallery {
@@ -679,6 +690,12 @@ body {
         .main-contact .formulario div form .boton .boton-enviar {
           font-size: 20.19px;
           padding: 1rem 2rem; }
+          .main-contact .formulario div form .boton .boton-enviar:hover {
+            background: #ffffff;
+            border: 2px #121111;
+            font-size: 20.19px;
+            padding: 1rem 2rem;
+            color: #121111; }
     .main-contact .card {
       border: none; }
       .main-contact .card .card-body .card-text {

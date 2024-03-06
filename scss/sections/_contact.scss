@@ -186,6 +186,13 @@
                         .boton-enviar {
                             font-size: 20.19px;
                             padding: 1rem 2rem;
+                            &:hover {
+                                background: $blanco;
+                                border: 2px  $negro;
+                                font-size: 20.19px;
+                                padding: 1rem 2rem;
+                                color: $negro;
+                            }
                         }
                     }
                 }
@@ -215,3 +222,4 @@
         } 
     } 
 }
+
