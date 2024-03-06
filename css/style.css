@@ -50,9 +50,12 @@ body {
     .nav ul li {
       margin: 0 2rem; }
       .nav ul li a {
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
         font-size: 30.14px; }
+        .nav ul li a h1 {
+          font-size: 40px;
+          text-decoration: 2px overline; }
 
 @media (max-width: 768px) {
   /* -------- query nav --------- */
@@ -64,7 +67,9 @@ body {
       width: 12rem;
       padding-left: 0; }
     .nav ul {
-      margin-right: 0; } }
+      margin-right: 0; }
+      .nav ul li a h1 {
+        font-size: 30px; } }
 
 @media (max-width: 426px) {
   /* -------- query nav --------- */
@@ -72,6 +77,8 @@ body {
     margin: 0 1rem; }
     .nav ul li a {
       font-size: 20px; }
+      .nav ul li a h1 {
+        font-size: 25px; }
   .header-index h1 {
     font-size: 44px; } }
 
@@ -91,7 +98,7 @@ body {
     width: 1139px;
     font-family: PPNeueMontreal-Thin;
     font-size: 84.251px;
-    color: #fff;
+    color: #ffffff;
     margin: 0 3.12rem;
     font-weight: 400; }
     .header-index h1 .brand {
@@ -140,7 +147,7 @@ body {
         justify-content: flex-end;
         align-items: center; }
         .main-index section .link-gallery a h2 {
-          color: #FFF;
+          color: #ffffff;
           font-size: 126.788px;
           font-style: normal;
           rotate: -90deg;
@@ -218,7 +225,7 @@ body {
         margin-right: 3rem;
         list-style: none; }
         .header_pages nav ul li a {
-          color: #FFF;
+          color: #ffffff;
           text-decoration: none;
           font-size: 33.104px; }
 
@@ -297,7 +304,7 @@ body {
   padding: 3.12rem;
   background-color: #121111; }
   .header-project h1 {
-    color: #FFF;
+    color: #ffffff;
     font-size: 80px; }
     .header-project h1 .jende {
       color: #FFD075; }
@@ -307,14 +314,14 @@ body {
   background-color: #121111;
   /* ----------GRID IMAGENES ---------- */ }
   .main-project p {
-    color: #FFF; }
+    color: #ffffff; }
   .main-project .sub-header {
     height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 0 3.12rem;
-    border-bottom: 1px solid #FFF; }
+    border-bottom: 1px solid #ffffff; }
     .main-project .sub-header div {
       padding-bottom: 1rem; }
       .main-project .sub-header div p {
@@ -422,10 +429,10 @@ body {
       .main-project .botones div a {
         font-size: 129.222px;
         text-decoration: none;
-        color: #FFF; }
+        color: #ffffff; }
         .main-project .botones div a:hover {
           text-decoration: 2px underline;
-          color: #A1FEDD;
+          color: #FFD075;
           font-size: 100.222px;
           transition: all 0.5s; }
 
@@ -546,11 +553,15 @@ body {
 .nav a img {
   box-sizing: content-box; }
 
+.nav ul {
+  margin: 0;
+  padding: 0; }
+
 /* ---------- CONTACT -------- */
 .main-contact {
   display: flex;
   flex-direction: row;
-  background-color: #131312; }
+  background: #121111; }
   .main-contact .card {
     width: 40%;
     margin: auto;
@@ -558,11 +569,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #131312; }
+    background-color: #121111; }
     .main-contact .card .card-body .card-text {
       font-size: 20px;
       font-family: PPNeueMontreal-Thin;
-      color: rgba(255, 255, 255, 0.4);
+      color: #ffffff66;
       font-weight: 700; }
   .main-contact .formulario {
     width: 90%;
@@ -575,18 +586,18 @@ body {
       .main-contact .formulario div form {
         font-size: 60px;
         font-family: PPNeueMontreal-Thin;
-        color: #FFF;
+        color: #ffffff;
         line-height: normal; }
         .main-contact .formulario div form .nombre {
           width: -webkit-fill-available;
           border: none;
-          border-bottom: 3px solid #FFF;
+          border-bottom: 3px solid #ffffff;
           padding: 0 10px;
           margin: 0;
           outline: 0;
           background: transparent;
           font-size: 60px;
-          color: #FFF;
+          color: #C0A9FF;
           padding: 5px 0; }
         .main-contact .formulario div form textarea {
           width: -webkit-fill-available;
@@ -597,18 +608,18 @@ body {
           outline: 0;
           background: transparent;
           font-size: 60px;
-          color: #7d7de9;
+          color: #C0A9FF;
           background-image: url("/resources/linea-form.png"); }
         .main-contact .formulario div form .email {
           border: none;
-          border-bottom: 3px solid #fff;
+          border-bottom: 3px solid #ffffff;
           padding: 0 10px;
           margin: 0;
           width: -webkit-fill-available;
           outline: 0;
           background: transparent;
           font-size: 60px;
-          color: #7d7de9; }
+          color: #C0A9FF; }
         .main-contact .formulario div form .boton {
           display: flex;
           align-items: center;
@@ -617,13 +628,19 @@ body {
           width: auto; }
           .main-contact .formulario div form .boton .boton-enviar {
             background: #121111;
-            border: 2px solid white;
-            font-size: 25.19px;
+            border: 2px solid #ffffff;
+            font-size: 30.19px;
             padding: 0 2rem;
             text-align: center;
             font-family: PPNeueMontreal-Thin;
-            color: #FFF;
+            color: #ffffff;
             border-radius: 100px; }
+            .main-contact .formulario div form .boton .boton-enviar:hover {
+              background: #ffffff;
+              border: 2px #121111;
+              font-size: 31.19px;
+              padding: 0 2rem;
+              color: #121111; }
 
 @media (max-width: 1024px) {
   .main-contact {
@@ -633,6 +650,11 @@ body {
     .main-contact .card {
       width: 15%;
       margin: 0; } }
+
+@media (max-width: 768px) {
+  .nav ul {
+    margin: 0;
+    padding: 0; } }
 
 @media (max-width: 426px) {
   .nav ul {
@@ -683,7 +705,7 @@ body {
       .footer .nav-footer .enlaces-footer li {
         margin: 0 2rem; }
         .footer .nav-footer .enlaces-footer li a {
-          color: #fff;
+          color: #ffffff;
           text-decoration: none;
           font-size: 30.14px; }
   .footer .contenedor__principal_redes {
@@ -692,7 +714,7 @@ body {
     .footer .contenedor__principal_redes .contenedor-redes {
       width: 90%;
       height: 87px;
-      border-top: 1px solid #fff;
+      border-top: 1px solid #ffffff;
       display: flex;
       justify-content: space-between;
       align-items: center; }
@@ -702,7 +724,7 @@ body {
         .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes li {
           margin: 0 1.5rem; }
           .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes li a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             font-size: 22.34px; }
       .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive {
@@ -711,11 +733,11 @@ body {
         .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive li {
           margin: 0 1rem; }
           .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive li a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             font-size: 20.34px; }
       .footer .contenedor__principal_redes .contenedor-redes h3 {
-        color: rgba(255, 255, 255, 0.4);
+        color: #ffffff66;
         margin-right: 3.12rem; }
 
 .footer__pages {

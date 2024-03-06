@@ -5,13 +5,18 @@
             box-sizing: content-box;
         }
     }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
 /* ---------- CONTACT -------- */
 .main-contact {
     display: flex;
     flex-direction: row;
-    background-color: rgb(19, 19, 18);
+    background: $negro;
 
     .card {
         width: 40%;
@@ -20,13 +25,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(19, 19, 18);
+        background-color: $negro;
 
         .card-body {
             .card-text {
                 font-size: 20px;
                 font-family: PPNeueMontreal-Thin;
-                color: rgba(255, 255, 255, 0.40);
+                color: $gris;
                 font-weight: 700;
             }
         }
@@ -45,19 +50,19 @@
             form {
                 font-size: 60px;
                 font-family: PPNeueMontreal-Thin;
-                color: #FFF;
+                color: $blanco;
                 line-height: normal;
 
                 .nombre {
                     width: -webkit-fill-available;
                     border: none;
-                    border-bottom: 3px solid #FFF;
+                    border-bottom: 3px solid $blanco;
                     padding: 0 10px;
                     margin: 0;
                     outline: 0;
                     background: transparent;
                     font-size: 60px;
-                    color: #FFF;
+                    color: $morado;
                     padding: 5px 0;
                 }
 
@@ -70,21 +75,21 @@
                     outline: 0;
                     background: transparent;
                     font-size: 60px;
-                    color: rgb(125, 125, 233);
+                    color: $morado;
                     background-image: url('/resources/linea-form.png');
 
                 }
 
                 .email {
                     border: none;
-                    border-bottom: 3px solid #fff;
+                    border-bottom: 3px solid $blanco;
                     padding: 0 10px;
                     margin: 0;
                     width: -webkit-fill-available;
                     outline: 0;
                     background: transparent;
                     font-size: 60px;
-                    color: rgb(125, 125, 233);
+                    color: $morado;
 
                 }
 
@@ -96,14 +101,21 @@
                     width: auto;
 
                     .boton-enviar {
-                        background: #121111;
-                        border: 2px solid white;
-                        font-size: 25.19px;
+                        background: $negro;
+                        border: 2px solid $blanco;
+                        font-size: 30.19px;
                         padding: 0 2rem;
                         text-align: center;
                         font-family: PPNeueMontreal-Thin;
-                        color: #FFF;
+                        color: $blanco;
                         border-radius: 100px;
+                        &:hover {
+                            background: $blanco;
+                            border: 2px  $negro;
+                            font-size: 31.19px;
+                            padding: 0 2rem;
+                            color: $negro;
+                        }
 
                     }
                 }
@@ -125,6 +137,16 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    .nav{
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
 @media (max-width: 426px) {
 
     .nav{
@@ -135,7 +157,7 @@
     }
 
     .main-contact {
-        background: #121111;
+        background: $negro;
         .formulario {
             width: 100%;
             padding: 3rem 1rem 0;

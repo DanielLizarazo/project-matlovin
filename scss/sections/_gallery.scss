@@ -3,14 +3,14 @@
 
 .main-gallery {
     margin: auto;
-    background: #121111;
+    background: $negro;
     max-width: 1520px;
     .contenedor-galeria {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background: #121111;
+        background: $negro;
         img {
             width: 330px;
             height: 552px;

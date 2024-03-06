@@ -2,7 +2,7 @@
 .header-index {
     /* width: 100vw; */
     height: 56.4rem;
-    background-color: #121111;
+    background-color: $negro;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -15,18 +15,18 @@
         width: 1139px;
         font-family: PPNeueMontreal-Thin;
         font-size: 84.251px;
-        color: #fff;
+        color: $blanco;
         margin: 0 3.12rem;
         font-weight: 400;
 
         .brand {
            
-            color: #FFB59D;
+            color: $naranja;
             text-decoration: 4px underline;
         }
 
         .digital {
-            color: #C0A9FF;
+            color: $morado;
             text-decoration: 4px underline;
         }
     }
@@ -38,12 +38,12 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: #121111;
+    background-color: $negro;
 
     section {
         /* -------con GRID---------- */
         display: grid;
-        background-color: #121111;
+        background-color: $negro;
         margin: 0 1rem 0 3.12rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -67,7 +67,7 @@
         
             .link-gallery {
                 grid-area: link-gallery;
-                background-color: #FFB59D;
+                background-color: $naranja;
                 width: 85%;
                 border-radius: 80px;
         
@@ -81,7 +81,7 @@
                     align-items: center;
         
                     h2 {
-                        color: #FFF;
+                        color: $blanco;
                         font-size: 126.788px;
                         font-style: normal;
                         rotate: -90deg;
