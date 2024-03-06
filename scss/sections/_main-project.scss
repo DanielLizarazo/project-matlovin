@@ -139,7 +139,8 @@
             padding: 4rem 0;
 
             p {
-                font-size: 80px;
+                font-size: 60px;
+                line-height: 80px
             }
         }
     }
@@ -276,8 +277,11 @@
         }
 
         .contenedor-frase {
-            p {
-                font-size: 60px;
+            div {
+                p {
+                    font-size: 40px;
+                    line-height: 56px
+                }
             }
         }
 
@@ -344,10 +348,12 @@
         }
 
         .contenedor-concepto {
-            padding: 3rem 1rem;            
+            padding: 3rem 1rem;
+
             .concept {
                 width: 22%;
                 margin: 0;
+
                 p {
                     font-size: 17px;
                     line-height: 30px;
@@ -356,6 +362,7 @@
 
             .contenedor_parrafo {
                 width: 70%;
+
                 p {
                     font-size: 17px;
                     line-height: 33px;
@@ -375,6 +382,7 @@
             div {
                 p {
                     font-size: 30px;
+                    line-height: 45px
                 }
 
             }

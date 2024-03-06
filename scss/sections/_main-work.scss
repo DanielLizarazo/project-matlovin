@@ -9,6 +9,9 @@
         align-items: center;
 
         ul {
+            animation: entrada_izq;
+            animation-duration: 1.5s;
+            animation-delay: 0.2s;
             display: flex;
 
             li {
