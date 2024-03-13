@@ -108,27 +108,30 @@
                 padding-top: 2rem;
             }
         }
-        .contenedor__principal_redes{
+
+        .contenedor__principal_redes {
 
             .contenedor-redes {
-                    .nav-redes {
-                        .enlaces-redes {
-                            display: none;
-                        }
-            
-                        .enlaces-redes-responsive {
-                            display: flex;
-                        }
+                .nav-redes {
+                    .enlaces-redes {
+                        display: none;
                     }
-            
-                    h3 {
-                        font-size: 1rem;
-                        margin-right: 1.12rem;
-                    }    }
+
+                    .enlaces-redes-responsive {
+                        display: flex;
+                    }
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    margin-right: 1.12rem;
+                }
+            }
         }
 
     }
 }
+
 .footer .nav-footer__hidden {
     height: 2rem;
 }

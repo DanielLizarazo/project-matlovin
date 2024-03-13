@@ -554,11 +554,18 @@ body {
     .main-gallery .contenedor-galeria img {
       width: 330px;
       height: 552px;
-      margin: 10px; }
+      margin: 10px;
+      filter: brightness(0.5); }
       .main-gallery .contenedor-galeria img:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         transition-duration: 0.5s;
-        border-radius: 20px; }
+        border-radius: 20px;
+        filter: none;
+        z-index: 1; }
+
+@media (max-width: 426px) {
+  .main-gallery .contenedor-galeria img {
+    filter: none; } }
 
 /* NAV de contact por que hay boostrap*/
 .nav a img {

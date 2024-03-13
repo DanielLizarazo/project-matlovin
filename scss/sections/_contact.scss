@@ -5,7 +5,8 @@
             box-sizing: content-box;
         }
     }
-    ul{
+
+    ul {
         margin: 0;
         padding: 0;
     }
@@ -109,9 +110,10 @@
                         font-family: PPNeueMontreal-Thin;
                         color: $blanco;
                         border-radius: 100px;
+
                         &:hover {
                             background: $blanco;
-                            border: 2px  $negro;
+                            border: 2px $negro;
                             font-size: 31.19px;
                             padding: 0 2rem;
                             color: $negro;
@@ -139,8 +141,8 @@
 
 @media (max-width: 768px) {
 
-    .nav{
-        ul{
+    .nav {
+        ul {
             margin: 0;
             padding: 0;
         }
@@ -149,8 +151,8 @@
 
 @media (max-width: 426px) {
 
-    .nav{
-        ul{
+    .nav {
+        ul {
             margin: 0;
             padding: 0;
         }
@@ -158,6 +160,7 @@
 
     .main-contact {
         background: $negro;
+
         .formulario {
             width: 100%;
             padding: 3rem 1rem 0;
@@ -186,9 +189,10 @@
                         .boton-enviar {
                             font-size: 20.19px;
                             padding: 1rem 2rem;
+
                             &:hover {
                                 background: $blanco;
-                                border: 2px  $negro;
+                                border: 2px $negro;
                                 font-size: 20.19px;
                                 padding: 1rem 2rem;
                                 color: $negro;
@@ -201,6 +205,7 @@
 
         .card {
             border: none;
+
             .card-body {
                 .card-text {
                     font-size: 14px;
@@ -210,16 +215,16 @@
             }
         }
     }
-    .footer{
-        .contenedor__principal_redes{
-            .contenedor-redes{
-                .nav-redes{
+
+    .footer {
+        .contenedor__principal_redes {
+            .contenedor-redes {
+                .nav-redes {
                     .enlaces-redes-responsive {
                         padding: 0;
                     }
-                } 
+                }
             }
-        } 
-    } 
+        }
+    }
 }
-

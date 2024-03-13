@@ -1,24 +1,40 @@
-
 /* -------------------- GALLERY -------------*/
 
 .main-gallery {
     margin: auto;
     background: $negro;
     max-width: 1520px;
+
     .contenedor-galeria {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background: $negro;
+
         img {
             width: 330px;
             height: 552px;
             margin: 10px;
+            filter: brightness(0.5);
+
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.2);
                 transition-duration: 0.5s;
                 border-radius: 20px;
+                filter: none;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 426px) {
+    .main-gallery {
+        .contenedor-galeria {
+            img {
+                filter: none;
             }
         }
     }
