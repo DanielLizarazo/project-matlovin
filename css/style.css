@@ -627,7 +627,7 @@ body {
           background: transparent;
           font-size: 60px;
           color: #C0A9FF;
-          background-image: url("/resources/linea-form.png"); }
+          background-image: url(../resources/linea-form.png); }
         .main-contact .formulario div form .email {
           border: none;
           border-bottom: 3px solid #ffffff;
@@ -710,7 +710,9 @@ body {
         width: 5rem;
         text-align: center; }
   .footer .contenedor__principal_redes .contenedor-redes .nav-redes .enlaces-redes-responsive {
-    padding: 0; } }
+    padding: 0; }
+  .footer .contenedor__principal_redes .contenedor-redes h3 {
+    font-size: 1.17rem; } }
 
 /* ------------ footer ----------*/
 .footer {
@@ -762,7 +764,8 @@ body {
             font-size: 20.34px; }
       .footer .contenedor__principal_redes .contenedor-redes h3 {
         color: #ffffff66;
-        margin-right: 3.12rem; }
+        margin-right: 3.12rem;
+        font-size: 1.17rem; }
 
 .footer__pages {
   /* width: 100vw; */
