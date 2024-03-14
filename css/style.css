@@ -656,6 +656,7 @@ body {
             .main-contact .formulario div form .boton .boton-enviar:hover {
               background: #ffffff;
               border: 2px solid #121111;
+              font-family: PPNeueMontreal-Thin;
               font-size: 30.19px;
               padding: 0 2rem;
               color: #121111; }
